@@ -1,12 +1,10 @@
 import base64
 import httpx
 import fastapi
-from pydantic import BaseModel
-from typing import List
 import redis
-from app.schemas.common.booking import BookingCreateBody, OptionConfirmBody,ModifySchemaBody
-
-
+from app.integrations.corendon.schemas.common.auth import AuthCredentials
+from app.integrations.corendon.schemas.common.booking import OptionConfirmBody, ModifySchemaBody,BookingCreateBody
+from app.integrations.corendon.schemas.common.flight import FlightBookBody, FlightSearchBody, FlightPriceBody
 
 app = fastapi.FastAPI()
 
@@ -18,55 +16,8 @@ surN =''
 pnr =''
 cont_type = 'application/x-www-form-urlencoded;charset=UTF-8'
 
-class AuthCredentials(BaseModel):
-    client_id: str = "CAI/fxQKTKpe63"
-    client_secret: str = "uCQA2eddtbXLlrrQ"
-    username: str
-    password: str
 
 
-
-class PassengerType(BaseModel):
-    InfantCount: int
-    AdultCount: int
-    ChildCount: int
-
-
-class FlightItem(BaseModel):
-    DeparturePointCode: str
-    FlightDate: str
-    ArrivalPointCode: str
-    DeparturePointType: str
-    ArrivalPointType: str
-
-class FlightSearchBody(BaseModel):
-    TripType: str
-    PassengerCounts: PassengerType
-    CurrencyCode: str
-    Flights: List[FlightItem]
-
-
-class FlightPriceBody(BaseModel):
-    TripType: str
-    CurrencyCode: str
-    PassengerCounts: PassengerType
-    FlightKeys: list[str]
-
-class Passenger(BaseModel):
-    TravellerType: str
-    Title: str
-    FirstName: str
-    LastName: str
-    Birthdate: str
-    NationalityCode: str = ""
-    HealthCheckCode: str = ""
-
-class FlightBookBody(BaseModel):
-    Passengers: List[Passenger]
-    TripType: str
-    PassengerCounts: PassengerType
-    CurrencyCode: str
-    FlightKeys: List[str]
 
 @app.get("/")
 def ddd():

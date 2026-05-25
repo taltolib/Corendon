@@ -1,6 +1,8 @@
 from pydantic import BaseModel
 from typing import Optional
-from payment import PaymentSchema, ContactInformationSchema
+
+from app.integrations.corendon.schemas.common.payment import PaymentSchema, ContactInformationSchema
+
 
 class BookingRequest(BaseModel):
     BasketKey: str

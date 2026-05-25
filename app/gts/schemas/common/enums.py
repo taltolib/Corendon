@@ -14,9 +14,3 @@ class PassengerType(str, Enum):
     child = "CHD"
     infant = "INF"
     infant_with_seat = "INS"
-
-
-class PassengerType(BaseModel):
-    InfantCount: int
-    AdultCount: int
-    ChildCount: int

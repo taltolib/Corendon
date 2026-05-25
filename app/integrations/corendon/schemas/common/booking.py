@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 
-from app.schemas.common.payment import PaymentSchema, ContactInformationSchema
+from app.integrations.corendon.schemas.common.payment import PaymentSchema, ContactInformationSchema
+
 
 class ModifySchemaBody(BaseModel):
     Pnr: str
