@@ -4,7 +4,7 @@ import fastapi
 from pydantic import BaseModel
 from typing import List
 import redis
-from app.schemas.common.booking import BookingCreateBody
+from app.schemas.common.booking import BookingCreateBody, OptionConfirmBody,ModifySchemaBody
 
 
 
@@ -140,7 +140,7 @@ async def flight_search(body: FlightSearchBody):
         "Content-Type": "application/json",
     }
 
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(timeout=30) as client:
 
         response = await client.post(
             url,
@@ -253,4 +253,42 @@ async def flight_detail():
         response.raise_for_status()
         print(response.text, response.status_code,"Ответ прищел ⬇️")
         return  response.json()
+
+@app.post("/option")
+async def flight_option(body : OptionConfirmBody):
+    tokenV = ram.get("token")
+    url = "https://apitest.corendonairlines.com/api/booking/status/optionconfirmation"
+    headers = {
+        "Authorization": f"Bearer {tokenV}",
+        "Content-Type": "application/json",
+    }
+
+    async with httpx.AsyncClient(timeout=30.0) as client:
+        response = await client.post(
+            url,
+            headers=headers,
+            json=body.model_dump()
+        )
+        response.raise_for_status()
+        print(response.text, response.status_code, "Пришел ответ ⬇️")
+        return response.json()
+
+
+@app.post("/modify")
+async  def flight_modify (body : ModifySchemaBody):
+    tokenV = ram.get("token")
+    url = "https://apitest.corendonairlines.com/api/booking/modify"
+    headers = {
+        "Authorization": f"Bearer {tokenV}",
+        "Content-Type": "application/json",
+    }
+    async with httpx.AsyncClient(timeout=30.0) as client:
+        response = await client.post(
+            url,
+            headers=headers,
+            json=body.model_dump()
+        )
+        print(response.text, f" Статус : {response.status_code}", 'Ответ из /modify ⬇️')
+        response.raise_for_status()
+        return response.json()
 

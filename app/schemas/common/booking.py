@@ -1,40 +1,9 @@
 from pydantic import BaseModel
-from typing import List, Optional
-from pydantic import BaseModel
-from typing import Optional
 
+from app.schemas.common.payment import PaymentSchema, ContactInformationSchema
 
-class CreditCardSchema(BaseModel):
-    CardType: int
-    CardNumber: str
-    ExpireMonth: int
-    ExpireYear: int
-    Cvc: str
-    FullName: str
-
-
-class PhoneInformationSchema(BaseModel):
-    CountryCode: str
-    AreaCode: str
-    Number: str
-
-
-class PaymentSchema(BaseModel):
-    CreditCard: CreditCardSchema | None = None
-    CurrencyCode: str
-    PaymentMethodCode: str
-
-
-class ContactInformationSchema(BaseModel):
-    Title: str
-    FirstName: str
-    LastName: str
-    Phone: str
-    PhoneInformation: PhoneInformationSchema | None = None
-    Email: str
-    BirthDate: str
-    CountryCode: str | None = None
-
+class ModifySchemaBody(BaseModel):
+    Pnr: str
 
 class BookingCreateBody(BaseModel):
     BasketKey: str
@@ -44,3 +13,8 @@ class BookingCreateBody(BaseModel):
     SalesAmount: str
     Payment: PaymentSchema
     ContactInformation: ContactInformationSchema
+
+class OptionConfirmBody(BaseModel):
+    Pnr: str
+    SalesAmount: str
+    Payment: PaymentSchema
