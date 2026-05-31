@@ -1,8 +1,7 @@
 from typing import List
 from pydantic import BaseModel
 
-from app.gts.schemas.common.enums import PassengerType
-from app.integrations.corendon.schemas.common.passeger import Passenger
+from app.integrations.corendon.schemas.common.passeger import Passenger, PassengerType
 
 
 class FlightItem(BaseModel):

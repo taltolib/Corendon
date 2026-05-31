@@ -15,7 +15,7 @@ class PriceInfo(BaseModel):
 class PriceDetail :
     passenger_type : PassengerType #
     currency : str # Name
-    quantity : int #
+    quantity : int # 
     single_base_amount : float #BaseTotal
     single_tax_amount : float #TaxTotal
     single_tax_details : float #`TaxDetails`
