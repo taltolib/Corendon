@@ -2,9 +2,12 @@ import base64
 import httpx
 import fastapi
 import redis
+from app.converters.search.request_converter import convert_search_request
+from app.converters.search.response_converter import convert_search_response
+from app.gts.schemas.common.direction import GtsSearchRequest
 from app.integrations.corendon.schemas.common.auth import AuthCredentials
 from app.integrations.corendon.schemas.common.booking import OptionConfirmBody, ModifySchemaBody,BookingCreateBody
-from app.integrations.corendon.schemas.common.flight import FlightBookBody, FlightSearchBody, FlightPriceBody
+from app.integrations.corendon.schemas.common.flight import FlightBookBody, FlightPriceBody
 
 app = fastapi.FastAPI()
 
@@ -79,32 +82,36 @@ async def flight_list():
 
 
 @app.post("/search")
-async def flight_search(body: FlightSearchBody):
+async def flight_search(body: GtsSearchRequest):
 
     url = "https://apitest.corendonairlines.com/api/flight/search"
-    print(url, "url ")
     tokenV = ram.get("token")
-    # print(tokenV, "token")
 
     headers = {
         "Authorization": f"Bearer {tokenV}",
         "Content-Type": "application/json",
     }
 
+    corendon_body = convert_search_request(body)
+
     async with httpx.AsyncClient(timeout=30) as client:
 
         response = await client.post(
             url,
             headers=headers,
-            json=body.model_dump()
+            json=corendon_body.model_dump()
         )
 
-        print(response.status_code , "status")
-        print(response.text, "response")
+        print(response.status_code, "status")
+        print(response.text, "response ⬇️")
 
         response.raise_for_status()
 
-        return response.json()
+        corendon_data = response.json()
+        gts_result = convert_search_response(corendon_data)
+        print(gts_result, "gts_result ⬇️")
+
+        return gts_result
 
 
 @app.post("/price")

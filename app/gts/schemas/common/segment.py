@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from app.gts.schemas.common.airplane import AirplaneInfo
 
 class Segment (BaseModel):
-    segment_index: str
+    segment_index: int
     segment_key : str
     leg : str #Нужно создать  в ручную
     flight_number : str #FlightNumber

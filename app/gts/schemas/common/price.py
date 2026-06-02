@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+﻿from pydantic import BaseModel
 
 from app.gts.schemas.common.enums import PassengerType
 
@@ -12,7 +12,7 @@ class PriceInfo(BaseModel):
     from_commission_amount: float #
     to_commission_amount: float #
 
-class PriceDetail :
+class PriceDetail(BaseModel) :
     passenger_type : PassengerType #
     currency : str # Name
     quantity : int # 

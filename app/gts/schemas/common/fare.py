@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
+from app.gts.schemas.common.enums import PassengerType
 from app.gts.schemas.common.upsell import Upsell
-from app.integrations.corendon.schemas.common.passeger import PassengerType
 
 
 class FareInfo (BaseModel):
@@ -15,7 +15,3 @@ class FareInfo (BaseModel):
     service_class_code : str #AirFareCode
     booking_class : str # PriceBandCode
     description : str | None #
-
-
-
-
