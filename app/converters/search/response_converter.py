@@ -361,9 +361,15 @@ def convert_search_response(corendon_res: dict) -> list[Offer]:
 
             routes = [route]
 
-            segment_keys = [seg.segment_key for seg in route.segments]
+            segment_keys = []
 
-            legs = [seg.leg for seg in route.segments]
+            for seg in route.segments:
+                segment_keys.append(seg.segment_key)
+
+            legs = []
+
+            for leg in route.segments:
+                legs.append(leg.leg)
 
             has_upsell = len(fare_variants) > 1
 
@@ -404,6 +410,9 @@ def convert_search_response(corendon_res: dict) -> list[Offer]:
 
     else:
         for out_route, out_fares in directions[0]:
+            print(out_fares, '⬇️  Апсел ⬇️')
+            print(out_route, '⬇️  Роут ⬇️')
+
             for ret_route, _ in directions[1]:
                 routes = [out_route, ret_route]
                 segment_keys = [seg.segment_key for seg in out_route.segments] + [seg.segment_key for seg in ret_route.segments]
@@ -414,7 +423,7 @@ def convert_search_response(corendon_res: dict) -> list[Offer]:
                     price_info, price_details = convert_prices(fare_data, passenger_counts, currency)
                     fares_info = convert_fares_info(fare_data, segment_keys, legs, passenger_counts)
                     baggages_info = convert_baggages_info(fare_data, segment_keys, legs, passenger_counts)
-                    print(price_info, "price_info ⬇️")
+
 
                     offer = Offer(
                         offer_id=fare_data.get("FlightKey", str(uuid.uuid4())),
