@@ -1,0 +1,642 @@
+[
+    {
+        "offer_id": "c90b8327-41cb-48fd-9de5-36cb68b2b0fa",
+        "price_info": {
+            "price": 379.38,
+            "currency": "USD",
+            "fee_amount": 0.0,
+            "base_amount": 379.38,
+            "commission_amount": 0.0,
+            "from_commission_amount": 0.0,
+            "to_commission_amount": 0.0
+        },
+        "reprice_available": true,
+        "upsell": true,
+        "booking": true,
+        "is_baggage_info_provided_by_pax": false,
+        "is_no_changing_airport": false,
+        "price_details": [
+            {
+                "passenger_type": "ADT",
+                "currency": "USD",
+                "quantity": 2,
+                "single_base_amount": 126.46,
+                "single_tax_amount": 0.0,
+                "single_tax_details": 0.0,
+                "fee_amount": 0.0,
+                "to_commission_amount": 0.0,
+                "commission_amount": 0.0,
+                "single_total_amount": 126.46,
+                "base_total_amount": 252.92,
+                "tax_total_amount": 0.0,
+                "total_amount": 252.92,
+                "payable_amount": 252.92,
+                "single_fee_amount": 0.0,
+                "single_service_fee_amount": 0.0,
+                "single_commission_amount": 0.0,
+                "single_from_commission_amount": 0.0,
+                "single_to_commission_amount": 0.0,
+                "single_payable_amount": 126.46,
+                "service_fee_amount": 0.0,
+                "from_commission_amount": 0.0,
+                "profit_commission_amount": 0.0
+            },
+            {
+                "passenger_type": "CHD",
+                "currency": "USD",
+                "quantity": 1,
+                "single_base_amount": 126.46,
+                "single_tax_amount": 0.0,
+                "single_tax_details": 0.0,
+                "fee_amount": 0.0,
+                "to_commission_amount": 0.0,
+                "commission_amount": 0.0,
+                "single_total_amount": 126.46,
+                "base_total_amount": 126.46,
+                "tax_total_amount": 0.0,
+                "total_amount": 126.46,
+                "payable_amount": 126.46,
+                "single_fee_amount": 0.0,
+                "single_service_fee_amount": 0.0,
+                "single_commission_amount": 0.0,
+                "single_from_commission_amount": 0.0,
+                "single_to_commission_amount": 0.0,
+                "single_payable_amount": 126.46,
+                "service_fee_amount": 0.0,
+                "from_commission_amount": 0.0,
+                "profit_commission_amount": 0.0
+            }
+        ],
+        "baggages_info": [
+            {
+                "segment_keys": [
+                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                ],
+                "leg": [
+                    "AYT-HAJ",
+                    "HAJ-AYT"
+                ],
+                "passenger_type": "ADT",
+                "baggage": {
+                    "value": 0.0,
+                    "unit": "kg",
+                    "size": {
+                        "height": null,
+                        "width": null,
+                        "length": null,
+                        "unit": ""
+                    }
+                },
+                "hand_baggage": {
+                    "value": 1.0,
+                    "unit": "pc",
+                    "weight": 10.0,
+                    "size": {
+                        "height": null,
+                        "width": null,
+                        "length": null,
+                        "unit": ""
+                    }
+                },
+                "description": ""
+            },
+            {
+                "segment_keys": [
+                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                ],
+                "leg": [
+                    "AYT-HAJ",
+                    "HAJ-AYT"
+                ],
+                "passenger_type": "CHD",
+                "baggage": {
+                    "value": 0.0,
+                    "unit": "kg",
+                    "size": {
+                        "height": null,
+                        "width": null,
+                        "length": null,
+                        "unit": ""
+                    }
+                },
+                "hand_baggage": {
+                    "value": 1.0,
+                    "unit": "pc",
+                    "weight": 10.0,
+                    "size": {
+                        "height": null,
+                        "width": null,
+                        "length": null,
+                        "unit": ""
+                    }
+                },
+                "description": ""
+            }
+        ],
+        "fares_info": [
+            {
+                "segment_keys": [
+                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                ],
+                "leg": [
+                    "AYT-HAJ",
+                    "HAJ-AYT"
+                ],
+                "passenger_type": "ADT",
+                "seats": 6,
+                "upsell": {
+                    "name": "PUBLISHED",
+                    "services": []
+                },
+                "fare_code": "VRECO",
+                "service_class": "Eco",
+                "service_class_code": "EKO",
+                "booking_class": "V",
+                "description": ""
+            },
+            {
+                "segment_keys": [
+                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                ],
+                "leg": [
+                    "AYT-HAJ",
+                    "HAJ-AYT"
+                ],
+                "passenger_type": "CHD",
+                "seats": 6,
+                "upsell": {
+                    "name": "PUBLISHED",
+                    "services": []
+                },
+                "fare_code": "VRECO",
+                "service_class": "Eco",
+                "service_class_code": "EKO",
+                "booking_class": "V",
+                "description": ""
+            }
+        ],
+        "routes": [
+            {
+                "route_index": 1,
+                "direction": "AYT-HAJ",
+                "refundable": {
+                    "status": null,
+                    "type": null
+                },
+                "reissue": {
+                    "status": null,
+                    "type": null
+                },
+                "stops": 0,
+                "trip_time_minutes": 245,
+                "flight_time_minutes": 245,
+                "segments": [
+                    {
+                        "segment_index": 1,
+                        "segment_key": "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                        "leg": "AYT-HAJ",
+                        "flight_number": "124",
+                        "departure_country": "Antalya",
+                        "departure_country_code": "TR",
+                        "departure_city": "Antalya",
+                        "departure_city_code": "AYT",
+                        "departure_airport": "Antalya Havalimanı",
+                        "departure_airport_code": "AYT",
+                        "departure_date": "2026-06-07",
+                        "departure_time": "22:50",
+                        "departure_timezone": "",
+                        "arrival_country": "Hannover",
+                        "arrival_country_code": "DE",
+                        "arrival_city": "Hannover",
+                        "arrival_city_code": "HAJ",
+                        "arrival_airport": "Hannover Havalimanı",
+                        "arrival_airport_code": "HAJ",
+                        "arrival_terminal": "",
+                        "arrival_date": "2026-06-08",
+                        "arrival_time": "01:55",
+                        "arrival_timezone": "",
+                        "duration_minutes": 245,
+                        "stop_time_minutes": 0,
+                        "marketing_airline": "738",
+                        "marketing_airline_code": "XC",
+                        "marketing_airline_logo": "",
+                        "operating_airline": "738",
+                        "operating_airline_code": "XC",
+                        "operating_airline_logo": "",
+                        "seatmap_availability": false,
+                        "services_availability": false,
+                        "airplane_info": {
+                            "airplane": "738",
+                            "airplane_code": "738",
+                            "seat_width": "",
+                            "seat_angle": "",
+                            "seat_scheme": "",
+                            "seat_distance": "",
+                            "has_wifi": false
+                        }
+                    }
+                ]
+            },
+            {
+                "route_index": 2,
+                "direction": "HAJ-AYT",
+                "refundable": {
+                    "status": null,
+                    "type": null
+                },
+                "reissue": {
+                    "status": null,
+                    "type": null
+                },
+                "stops": 0,
+                "trip_time_minutes": 235,
+                "flight_time_minutes": 235,
+                "segments": [
+                    {
+                        "segment_index": 1,
+                        "segment_key": "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca",
+                        "leg": "HAJ-AYT",
+                        "flight_number": "123",
+                        "departure_country": "Hannover",
+                        "departure_country_code": "DE",
+                        "departure_city": "Hannover",
+                        "departure_city_code": "HAJ",
+                        "departure_airport": "Hannover Havalimanı",
+                        "departure_airport_code": "HAJ",
+                        "departure_date": "2026-06-17",
+                        "departure_time": "02:40",
+                        "departure_timezone": "",
+                        "arrival_country": "Antalya",
+                        "arrival_country_code": "TR",
+                        "arrival_city": "Antalya",
+                        "arrival_city_code": "AYT",
+                        "arrival_airport": "Antalya Havalimanı",
+                        "arrival_airport_code": "AYT",
+                        "arrival_terminal": "",
+                        "arrival_date": "2026-06-17",
+                        "arrival_time": "07:35",
+                        "arrival_timezone": "",
+                        "duration_minutes": 235,
+                        "stop_time_minutes": 0,
+                        "marketing_airline": "738",
+                        "marketing_airline_code": "XC",
+                        "marketing_airline_logo": "",
+                        "operating_airline": "738",
+                        "operating_airline_code": "XC",
+                        "operating_airline_logo": "",
+                        "seatmap_availability": false,
+                        "services_availability": false,
+                        "airplane_info": {
+                            "airplane": "738",
+                            "airplane_code": "738",
+                            "seat_width": "",
+                            "seat_angle": "",
+                            "seat_scheme": "",
+                            "seat_distance": "",
+                            "has_wifi": false
+                        }
+                    }
+                ]
+            }
+        ],
+        "provider": {
+            "provider_id": "",
+            "name": "Corendon Airlines",
+            "index": null,
+            "type": "",
+            "is_charter": true,
+            "provider_index": null,
+            "supplier_id": "",
+            "supplier_name": "Corendon Airlines"
+        },
+        "supplier_provider": {
+            "provider_name": "Corendon Airlines",
+            "provider_office": ""
+        },
+        "other": {}
+    },
+    {
+        "offer_id": "450877f9-b382-4e21-9021-1a2b38db876e",
+        "price_info": {
+            "price": 473.73,
+            "currency": "USD",
+            "fee_amount": 0.0,
+            "base_amount": 473.73,
+            "commission_amount": 0.0,
+            "from_commission_amount": 0.0,
+            "to_commission_amount": 0.0
+        },
+        "reprice_available": true,
+        "upsell": true,
+        "booking": true,
+        "is_baggage_info_provided_by_pax": false,
+        "is_no_changing_airport": false,
+        "price_details": [
+            {
+                "passenger_type": "ADT",
+                "currency": "USD",
+                "quantity": 2,
+                "single_base_amount": 157.91,
+                "single_tax_amount": 0.0,
+                "single_tax_details": 0.0,
+                "fee_amount": 0.0,
+                "to_commission_amount": 0.0,
+                "commission_amount": 0.0,
+                "single_total_amount": 157.91,
+                "base_total_amount": 315.82,
+                "tax_total_amount": 0.0,
+                "total_amount": 315.82,
+                "payable_amount": 315.82,
+                "single_fee_amount": 0.0,
+                "single_service_fee_amount": 0.0,
+                "single_commission_amount": 0.0,
+                "single_from_commission_amount": 0.0,
+                "single_to_commission_amount": 0.0,
+                "single_payable_amount": 157.91,
+                "service_fee_amount": 0.0,
+                "from_commission_amount": 0.0,
+                "profit_commission_amount": 0.0
+            },
+            {
+                "passenger_type": "CHD",
+                "currency": "USD",
+                "quantity": 1,
+                "single_base_amount": 157.91,
+                "single_tax_amount": 0.0,
+                "single_tax_details": 0.0,
+                "fee_amount": 0.0,
+                "to_commission_amount": 0.0,
+                "commission_amount": 0.0,
+                "single_total_amount": 157.91,
+                "base_total_amount": 157.91,
+                "tax_total_amount": 0.0,
+                "total_amount": 157.91,
+                "payable_amount": 157.91,
+                "single_fee_amount": 0.0,
+                "single_service_fee_amount": 0.0,
+                "single_commission_amount": 0.0,
+                "single_from_commission_amount": 0.0,
+                "single_to_commission_amount": 0.0,
+                "single_payable_amount": 157.91,
+                "service_fee_amount": 0.0,
+                "from_commission_amount": 0.0,
+                "profit_commission_amount": 0.0
+            }
+        ],
+        "baggages_info": [
+            {
+                "segment_keys": [
+                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                ],
+                "leg": [
+                    "AYT-HAJ",
+                    "HAJ-AYT"
+                ],
+                "passenger_type": "ADT",
+                "baggage": {
+                    "value": 20.0,
+                    "unit": "kg",
+                    "size": {
+                        "height": null,
+                        "width": null,
+                        "length": null,
+                        "unit": ""
+                    }
+                },
+                "hand_baggage": {
+                    "value": 1.0,
+                    "unit": "pc",
+                    "weight": 0.0,
+                    "size": {
+                        "height": null,
+                        "width": null,
+                        "length": null,
+                        "unit": ""
+                    }
+                },
+                "description": ""
+            },
+            {
+                "segment_keys": [
+                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                ],
+                "leg": [
+                    "AYT-HAJ",
+                    "HAJ-AYT"
+                ],
+                "passenger_type": "CHD",
+                "baggage": {
+                    "value": 20.0,
+                    "unit": "kg",
+                    "size": {
+                        "height": null,
+                        "width": null,
+                        "length": null,
+                        "unit": ""
+                    }
+                },
+                "hand_baggage": {
+                    "value": 1.0,
+                    "unit": "pc",
+                    "weight": 0.0,
+                    "size": {
+                        "height": null,
+                        "width": null,
+                        "length": null,
+                        "unit": ""
+                    }
+                },
+                "description": ""
+            }
+        ],
+        "fares_info": [
+            {
+                "segment_keys": [
+                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                ],
+                "leg": [
+                    "AYT-HAJ",
+                    "HAJ-AYT"
+                ],
+                "passenger_type": "ADT",
+                "seats": 6,
+                "upsell": {
+                    "name": "PUBLISHED",
+                    "services": []
+                },
+                "fare_code": "VRCOM",
+                "service_class": "Comfort",
+                "service_class_code": "COMFORT",
+                "booking_class": "V",
+                "description": ""
+            },
+            {
+                "segment_keys": [
+                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                ],
+                "leg": [
+                    "AYT-HAJ",
+                    "HAJ-AYT"
+                ],
+                "passenger_type": "CHD",
+                "seats": 6,
+                "upsell": {
+                    "name": "PUBLISHED",
+                    "services": []
+                },
+                "fare_code": "VRCOM",
+                "service_class": "Comfort",
+                "service_class_code": "COMFORT",
+                "booking_class": "V",
+                "description": ""
+            }
+        ],
+        "routes": [
+            {
+                "route_index": 1,
+                "direction": "AYT-HAJ",
+                "refundable": {
+                    "status": null,
+                    "type": null
+                },
+                "reissue": {
+                    "status": null,
+                    "type": null
+                },
+                "stops": 0,
+                "trip_time_minutes": 245,
+                "flight_time_minutes": 245,
+                "segments": [
+                    {
+                        "segment_index": 1,
+                        "segment_key": "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                        "leg": "AYT-HAJ",
+                        "flight_number": "124",
+                        "departure_country": "Antalya",
+                        "departure_country_code": "TR",
+                        "departure_city": "Antalya",
+                        "departure_city_code": "AYT",
+                        "departure_airport": "Antalya Havalimanı",
+                        "departure_airport_code": "AYT",
+                        "departure_date": "2026-06-07",
+                        "departure_time": "22:50",
+                        "departure_timezone": "",
+                        "arrival_country": "Hannover",
+                        "arrival_country_code": "DE",
+                        "arrival_city": "Hannover",
+                        "arrival_city_code": "HAJ",
+                        "arrival_airport": "Hannover Havalimanı",
+                        "arrival_airport_code": "HAJ",
+                        "arrival_terminal": "",
+                        "arrival_date": "2026-06-08",
+                        "arrival_time": "01:55",
+                        "arrival_timezone": "",
+                        "duration_minutes": 245,
+                        "stop_time_minutes": 0,
+                        "marketing_airline": "738",
+                        "marketing_airline_code": "XC",
+                        "marketing_airline_logo": "",
+                        "operating_airline": "738",
+                        "operating_airline_code": "XC",
+                        "operating_airline_logo": "",
+                        "seatmap_availability": false,
+                        "services_availability": false,
+                        "airplane_info": {
+                            "airplane": "738",
+                            "airplane_code": "738",
+                            "seat_width": "",
+                            "seat_angle": "",
+                            "seat_scheme": "",
+                            "seat_distance": "",
+                            "has_wifi": false
+                        }
+                    }
+                ]
+            },
+            {
+                "route_index": 2,
+                "direction": "HAJ-AYT",
+                "refundable": {
+                    "status": null,
+                    "type": null
+                },
+                "reissue": {
+                    "status": null,
+                    "type": null
+                },
+                "stops": 0,
+                "trip_time_minutes": 235,
+                "flight_time_minutes": 235,
+                "segments": [
+                    {
+                        "segment_index": 1,
+                        "segment_key": "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca",
+                        "leg": "HAJ-AYT",
+                        "flight_number": "123",
+                        "departure_country": "Hannover",
+                        "departure_country_code": "DE",
+                        "departure_city": "Hannover",
+                        "departure_city_code": "HAJ",
+                        "departure_airport": "Hannover Havalimanı",
+                        "departure_airport_code": "HAJ",
+                        "departure_date": "2026-06-17",
+                        "departure_time": "02:40",
+                        "departure_timezone": "",
+                        "arrival_country": "Antalya",
+                        "arrival_country_code": "TR",
+                        "arrival_city": "Antalya",
+                        "arrival_city_code": "AYT",
+                        "arrival_airport": "Antalya Havalimanı",
+                        "arrival_airport_code": "AYT",
+                        "arrival_terminal": "",
+                        "arrival_date": "2026-06-17",
+                        "arrival_time": "07:35",
+                        "arrival_timezone": "",
+                        "duration_minutes": 235,
+                        "stop_time_minutes": 0,
+                        "marketing_airline": "738",
+                        "marketing_airline_code": "XC",
+                        "marketing_airline_logo": "",
+                        "operating_airline": "738",
+                        "operating_airline_code": "XC",
+                        "operating_airline_logo": "",
+                        "seatmap_availability": false,
+                        "services_availability": false,
+                        "airplane_info": {
+                            "airplane": "738",
+                            "airplane_code": "738",
+                            "seat_width": "",
+                            "seat_angle": "",
+                            "seat_scheme": "",
+                            "seat_distance": "",
+                            "has_wifi": false
+                        }
+                    }
+                ]
+            }
+        ],
+        "provider": {
+            "provider_id": "",
+            "name": "Corendon Airlines",
+            "index": null,
+            "type": "",
+            "is_charter": true,
+            "provider_index": null,
+            "supplier_id": "",
+            "supplier_name": "Corendon Airlines"
+        },
+        "supplier_provider": {
+            "provider_name": "Corendon Airlines",
+            "provider_office": ""
+        },
+        "other": {}
+    }
+]

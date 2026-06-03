@@ -1,4 +1,5 @@
 import base64
+import json
 import httpx
 import fastapi
 import redis
@@ -20,6 +21,12 @@ pnr =''
 cont_type = 'application/x-www-form-urlencoded;charset=UTF-8'
 
 
+def save_res(name , content) :
+    try:
+        with open(name, 'w', encoding='utf-8') as file:
+            json.dump(content, file, ensure_ascii=False, indent=4)
+    except Exception as e:
+        print(str(e))
 
 
 @app.get("/")
@@ -109,7 +116,9 @@ async def flight_search(body: GtsSearchRequest):
 
         corendon_data = response.json()
         gts_result = convert_search_response(corendon_data)
-        print(gts_result, "gts_result ⬇️")
+        save_res("cor_res.json", corendon_data)
+        save_res("gts_res.json", gts_result)
+
 
         return gts_result
 

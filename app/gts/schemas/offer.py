@@ -1,4 +1,6 @@
-from pydantic import BaseModel
+from typing import Any, Optional
+
+from pydantic import BaseModel, Field
 
 from app.gts.schemas.common.baggage import BaggageInfo
 from app.gts.schemas.common.fare import FareInfo
@@ -21,3 +23,4 @@ class Offer (BaseModel) :
     routes: list[Route]
     provider: Provider
     supplier_provider: SupplierProvider
+    other :  Optional[dict[str , Any]]  =  Field(default=None)

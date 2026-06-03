@@ -15,6 +15,7 @@ def convert_search_request(gts: GtsSearchRequest) -> FlightSearchBody:
     else:
         trip_type = "3"
 
+
     flights = [
         
         FlightItem(
