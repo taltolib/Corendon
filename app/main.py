@@ -3,6 +3,7 @@ import json
 import httpx
 import fastapi
 import redis
+import os
 from app.converters.search.request_converter import convert_search_request
 from app.converters.search.response_converter import convert_search_response
 from app.gts.schemas.common.direction import GtsSearchRequest
@@ -21,17 +22,25 @@ pnr =''
 cont_type = 'application/x-www-form-urlencoded;charset=UTF-8'
 
 
-def save_res(name , content) :
+
+
+def save_res(name, content):
+    print("Текущая директория:", os.getcwd())
+    print("Сохраняю:", name)
+
     try:
-        with open(name, 'w', encoding='utf-8') as file:
+        with open(name, "w", encoding="utf-8") as file:
             json.dump(content, file, ensure_ascii=False, indent=4)
+
+        print("Файл сохранён")
     except Exception as e:
-        print(str(e))
+        print("Ошибка:", e)
 
 
 @app.get("/")
 def ddd():
     return {"token": "fffff"}
+
 
 
 @app.post("/auth")
@@ -116,11 +125,17 @@ async def flight_search(body: GtsSearchRequest):
 
         corendon_data = response.json()
         gts_result = convert_search_response(corendon_data)
-        save_res("cor_res.json", corendon_data)
-        save_res("gts_res.json", gts_result)
+        save_res("app/file/cor_respose.json", corendon_data)
+        save_res("app/file/gts_respose.json", gts_result)
+
 
 
         return gts_result
+
+@app.post("/upsell")
+def offer_upsell () :
+    print()
+
 
 
 @app.post("/price")

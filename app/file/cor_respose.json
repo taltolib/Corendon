@@ -11,14 +11,14 @@
     },
     "PassengerCounts": {
         "AdultCount": 2,
-        "ChildCount": 1,
+        "ChildCount": 0,
         "InfantCount": 0
     },
     "TotalServiceCharge": 0,
     "Flights": [
         {
             "Key": {
-                "FlightDate": "2026-06-03T00:00:00",
+                "FlightDate": "2026-06-07T00:00:00",
                 "DeparturePointType": 0,
                 "DeparturePointCode": "AYT",
                 "ArrivalPointType": 0,
@@ -28,8 +28,8 @@
                 {
                     "Key": {
                         "FlightRouteID": 14700124,
-                        "DepartureDate": "2026-06-03T22:50:00",
-                        "ArriveDate": "2026-06-04T01:55:00",
+                        "DepartureDate": "2026-06-07T22:50:00",
+                        "ArriveDate": "2026-06-08T01:55:00",
                         "DepartureAirportCode": "AYT",
                         "DepartureAirportName": "Antalya Havalimanı",
                         "DepartureCityCode": "AYT",
@@ -59,8 +59,8 @@
                                 "ArrivalCityName": "Hannover",
                                 "FlightNumber": "124",
                                 "AirlineCode": "XC",
-                                "DepartureDate": "2026-06-03T22:50:00",
-                                "ArriveDate": "2026-06-04T01:55:00",
+                                "DepartureDate": "2026-06-07T22:50:00",
+                                "ArriveDate": "2026-06-08T01:55:00",
                                 "Duration": 14700000,
                                 "AirCraftType": "738",
                                 "TimeOnAir": 14700000
@@ -69,11 +69,11 @@
                     },
                     "Value": [
                         {
-                            "FlightKey": "RUNPI1hDIzEyNCNBWVQjSEFKI0wjMSMzLjA2LjIwMjYgMjI6NTA6MDA=#03470de9-12f4-40c4-8d72-ec723e7d0206",
+                            "FlightKey": "RUNPI1hDIzEyNCNBWVQjSEFKI1YjMSM3LjA2LjIwMjYgMjI6NTA6MDA=#fd1cfa33-6ee5-48b9-bfe9-6022cd375f85",
                             "RestPax": 6,
                             "FreePax": 6,
-                            "PriceBandCode": "L",
-                            "FareBasisCode": "LRECO",
+                            "PriceBandCode": "V",
+                            "FareBasisCode": "VRECO",
                             "AirFareCode": "EKO",
                             "AirFareName": "Eco",
                             "AirFareRules": [],
@@ -85,23 +85,23 @@
                                     "TravellerType": 1,
                                     "ServiceCharge": 0,
                                     "FuelSurcharge": 0,
-                                    "BasePrice": 156.74,
+                                    "BasePrice": 126.1,
                                     "TaxPrice": 0,
                                     "DiscountPrice": 0,
                                     "SupplementPrice": 0,
                                     "TaxDetails": [],
-                                    "Price": 156.74
+                                    "Price": 126.1
                                 },
                                 {
                                     "TravellerType": 2,
                                     "ServiceCharge": 0,
                                     "FuelSurcharge": 0,
-                                    "BasePrice": 156.74,
+                                    "BasePrice": 0,
                                     "TaxPrice": 0,
                                     "DiscountPrice": 0,
                                     "SupplementPrice": 0,
                                     "TaxDetails": [],
-                                    "Price": 156.74
+                                    "Price": 0
                                 },
                                 {
                                     "TravellerType": 3,
@@ -115,8 +115,8 @@
                                     "Price": 0
                                 }
                             ],
-                            "SubTotal": 470.22,
-                            "BaseTotal": 470.22,
+                            "SubTotal": 252.2,
+                            "BaseTotal": 252.2,
                             "TaxTotal": 0,
                             "FuelSurchargeTotal": 0,
                             "DiscountTotal": 0,
@@ -127,11 +127,11 @@
                             "PersonalBaggage": 3
                         },
                         {
-                            "FlightKey": "Q09NRk9SVCNYQyMxMjQjQVlUI0hBSiNMIzEjMy4wNi4yMDI2IDIyOjUwOjAw#03470de9-12f4-40c4-8d72-ec723e7d0206",
+                            "FlightKey": "Q09NRk9SVCNYQyMxMjQjQVlUI0hBSiNWIzEjNy4wNi4yMDI2IDIyOjUwOjAw#fd1cfa33-6ee5-48b9-bfe9-6022cd375f85",
                             "RestPax": 6,
                             "FreePax": 6,
-                            "PriceBandCode": "L",
-                            "FareBasisCode": "LRCOM",
+                            "PriceBandCode": "V",
+                            "FareBasisCode": "VRCOM",
                             "AirFareCode": "COMFORT",
                             "AirFareName": "Comfort",
                             "AirFareRules": [],
@@ -143,23 +143,23 @@
                                     "TravellerType": 1,
                                     "ServiceCharge": 0,
                                     "FuelSurcharge": 0,
-                                    "BasePrice": 188.19,
+                                    "BasePrice": 157.47,
                                     "TaxPrice": 0,
                                     "DiscountPrice": 0,
                                     "SupplementPrice": 0,
                                     "TaxDetails": [],
-                                    "Price": 188.19
+                                    "Price": 157.47
                                 },
                                 {
                                     "TravellerType": 2,
                                     "ServiceCharge": 0,
                                     "FuelSurcharge": 0,
-                                    "BasePrice": 188.19,
+                                    "BasePrice": 0,
                                     "TaxPrice": 0,
                                     "DiscountPrice": 0,
                                     "SupplementPrice": 0,
                                     "TaxDetails": [],
-                                    "Price": 188.19
+                                    "Price": 0
                                 },
                                 {
                                     "TravellerType": 3,
@@ -173,8 +173,8 @@
                                     "Price": 0
                                 }
                             ],
-                            "SubTotal": 564.57,
-                            "BaseTotal": 564.57,
+                            "SubTotal": 314.94,
+                            "BaseTotal": 314.94,
                             "TaxTotal": 0,
                             "FuelSurchargeTotal": 0,
                             "DiscountTotal": 0,
@@ -190,7 +190,7 @@
         },
         {
             "Key": {
-                "FlightDate": "2026-06-06T00:00:00",
+                "FlightDate": "2026-06-17T00:00:00",
                 "DeparturePointType": 0,
                 "DeparturePointCode": "HAJ",
                 "ArrivalPointType": 0,
@@ -200,8 +200,8 @@
                 {
                     "Key": {
                         "FlightRouteID": 14100123,
-                        "DepartureDate": "2026-06-06T02:40:00",
-                        "ArriveDate": "2026-06-06T07:35:00",
+                        "DepartureDate": "2026-06-17T02:40:00",
+                        "ArriveDate": "2026-06-17T07:35:00",
                         "DepartureAirportCode": "HAJ",
                         "DepartureAirportName": "Hannover Havalimanı",
                         "DepartureCityCode": "HAJ",
@@ -231,8 +231,8 @@
                                 "ArrivalCityName": "Antalya",
                                 "FlightNumber": "123",
                                 "AirlineCode": "XC",
-                                "DepartureDate": "2026-06-06T02:40:00",
-                                "ArriveDate": "2026-06-06T07:35:00",
+                                "DepartureDate": "2026-06-17T02:40:00",
+                                "ArriveDate": "2026-06-17T07:35:00",
                                 "Duration": 14100000,
                                 "AirCraftType": "738",
                                 "TimeOnAir": 14100000
@@ -241,11 +241,11 @@
                     },
                     "Value": [
                         {
-                            "FlightKey": "RUNPI1hDIzEyMyNIQUojQVlUI1MjMiM2LjA2LjIwMjYgMDI6NDA6MDA=#03470de9-12f4-40c4-8d72-ec723e7d0206",
+                            "FlightKey": "RUNPI1hDIzEyMyNIQUojQVlUI1MyIzIjMTcuMDYuMjAyNiAwMjo0MDowMA==#fd1cfa33-6ee5-48b9-bfe9-6022cd375f85",
                             "RestPax": 6,
                             "FreePax": 6,
-                            "PriceBandCode": "S",
-                            "FareBasisCode": "SRECO",
+                            "PriceBandCode": "S2",
+                            "FareBasisCode": "S2RECO",
                             "AirFareCode": "EKO",
                             "AirFareName": "Eco",
                             "AirFareRules": [],
@@ -257,23 +257,23 @@
                                     "TravellerType": 1,
                                     "ServiceCharge": 0,
                                     "FuelSurcharge": 0,
-                                    "BasePrice": 122.67,
+                                    "BasePrice": 104.9,
                                     "TaxPrice": 0,
                                     "DiscountPrice": 0,
                                     "SupplementPrice": 0,
                                     "TaxDetails": [],
-                                    "Price": 122.67
+                                    "Price": 104.9
                                 },
                                 {
                                     "TravellerType": 2,
                                     "ServiceCharge": 0,
                                     "FuelSurcharge": 0,
-                                    "BasePrice": 122.67,
+                                    "BasePrice": 0,
                                     "TaxPrice": 0,
                                     "DiscountPrice": 0,
                                     "SupplementPrice": 0,
                                     "TaxDetails": [],
-                                    "Price": 122.67
+                                    "Price": 0
                                 },
                                 {
                                     "TravellerType": 3,
@@ -287,8 +287,8 @@
                                     "Price": 0
                                 }
                             ],
-                            "SubTotal": 368.01,
-                            "BaseTotal": 368.01,
+                            "SubTotal": 209.8,
+                            "BaseTotal": 209.8,
                             "TaxTotal": 0,
                             "FuelSurchargeTotal": 0,
                             "DiscountTotal": 0,
@@ -299,11 +299,11 @@
                             "PersonalBaggage": 3
                         },
                         {
-                            "FlightKey": "Q09NRk9SVCNYQyMxMjMjSEFKI0FZVCNTIzIjNi4wNi4yMDI2IDAyOjQwOjAw#03470de9-12f4-40c4-8d72-ec723e7d0206",
+                            "FlightKey": "Q09NRk9SVCNYQyMxMjMjSEFKI0FZVCNTMiMyIzE3LjA2LjIwMjYgMDI6NDA6MDA=#fd1cfa33-6ee5-48b9-bfe9-6022cd375f85",
                             "RestPax": 6,
                             "FreePax": 6,
-                            "PriceBandCode": "S",
-                            "FareBasisCode": "SRCOM",
+                            "PriceBandCode": "S2",
+                            "FareBasisCode": "S2RCOM",
                             "AirFareCode": "COMFORT",
                             "AirFareName": "Comfort",
                             "AirFareRules": [],
@@ -315,23 +315,23 @@
                                     "TravellerType": 1,
                                     "ServiceCharge": 0,
                                     "FuelSurcharge": 0,
-                                    "BasePrice": 154.11,
+                                    "BasePrice": 139.75,
                                     "TaxPrice": 0,
                                     "DiscountPrice": 0,
                                     "SupplementPrice": 0,
                                     "TaxDetails": [],
-                                    "Price": 154.11
+                                    "Price": 139.75
                                 },
                                 {
                                     "TravellerType": 2,
                                     "ServiceCharge": 0,
                                     "FuelSurcharge": 0,
-                                    "BasePrice": 154.11,
+                                    "BasePrice": 0,
                                     "TaxPrice": 0,
                                     "DiscountPrice": 0,
                                     "SupplementPrice": 0,
                                     "TaxDetails": [],
-                                    "Price": 154.11
+                                    "Price": 0
                                 },
                                 {
                                     "TravellerType": 3,
@@ -345,169 +345,8 @@
                                     "Price": 0
                                 }
                             ],
-                            "SubTotal": 462.33,
-                            "BaseTotal": 462.33,
-                            "TaxTotal": 0,
-                            "FuelSurchargeTotal": 0,
-                            "DiscountTotal": 0,
-                            "SupplementTotal": 0,
-                            "TaxDetails": [],
-                            "InfantBaggage": 0,
-                            "BaggagePiece": 1,
-                            "PersonalBaggage": 3
-                        }
-                    ]
-                },
-                {
-                    "Key": {
-                        "FlightRouteID": 13800121,
-                        "DepartureDate": "2026-06-06T05:00:00",
-                        "ArriveDate": "2026-06-06T09:50:00",
-                        "DepartureAirportCode": "HAJ",
-                        "DepartureAirportName": "Hannover Havalimanı",
-                        "DepartureCityCode": "HAJ",
-                        "DepartureCityName": "Hannover",
-                        "DepartureCountryCode": "DE",
-                        "ArrivalAirportCode": "AYT",
-                        "ArrivalAirportName": "Antalya Havalimanı",
-                        "ArrivalCityCode": "AYT",
-                        "ArrivalCityName": "Antalya",
-                        "ArriveCountryCode": "TR",
-                        "FlightNumber": "121",
-                        "AirlineCode": "XC",
-                        "Via": "direct",
-                        "IsAlternative": false,
-                        "TimeOnAir": 13800000,
-                        "AirCraftType": "738",
-                        "AvailableForCheckin": false,
-                        "Segments": [
-                            {
-                                "DepartureAirportCode": "HAJ",
-                                "DepartureAirportName": "Hannover Havalimanı",
-                                "DepartureCityCode": "HAJ",
-                                "DepartureCityName": "Hannover",
-                                "ArrivalAirportCode": "AYT",
-                                "ArrivalAirportName": "Antalya Havalimanı",
-                                "ArrivalCityCode": "AYT",
-                                "ArrivalCityName": "Antalya",
-                                "FlightNumber": "121",
-                                "AirlineCode": "XC",
-                                "DepartureDate": "2026-06-06T05:00:00",
-                                "ArriveDate": "2026-06-06T09:50:00",
-                                "Duration": 13800000,
-                                "AirCraftType": "738",
-                                "TimeOnAir": 13800000
-                            }
-                        ]
-                    },
-                    "Value": [
-                        {
-                            "FlightKey": "RUNPI1hDIzEyMSNIQUojQVlUI1MjMiM2LjA2LjIwMjYgMDU6MDA6MDA=#03470de9-12f4-40c4-8d72-ec723e7d0206",
-                            "RestPax": 6,
-                            "FreePax": 6,
-                            "PriceBandCode": "S",
-                            "FareBasisCode": "SRECO",
-                            "AirFareCode": "EKO",
-                            "AirFareName": "Eco",
-                            "AirFareRules": [],
-                            "CabinClass": 0,
-                            "Baggage": 0,
-                            "HandLuggage": 10,
-                            "Fare": [
-                                {
-                                    "TravellerType": 1,
-                                    "ServiceCharge": 0,
-                                    "FuelSurcharge": 0,
-                                    "BasePrice": 122.67,
-                                    "TaxPrice": 0,
-                                    "DiscountPrice": 0,
-                                    "SupplementPrice": 0,
-                                    "TaxDetails": [],
-                                    "Price": 122.67
-                                },
-                                {
-                                    "TravellerType": 2,
-                                    "ServiceCharge": 0,
-                                    "FuelSurcharge": 0,
-                                    "BasePrice": 122.67,
-                                    "TaxPrice": 0,
-                                    "DiscountPrice": 0,
-                                    "SupplementPrice": 0,
-                                    "TaxDetails": [],
-                                    "Price": 122.67
-                                },
-                                {
-                                    "TravellerType": 3,
-                                    "ServiceCharge": 0,
-                                    "FuelSurcharge": 0,
-                                    "BasePrice": 0,
-                                    "TaxPrice": 0,
-                                    "DiscountPrice": 0,
-                                    "SupplementPrice": 0,
-                                    "TaxDetails": [],
-                                    "Price": 0
-                                }
-                            ],
-                            "SubTotal": 368.01,
-                            "BaseTotal": 368.01,
-                            "TaxTotal": 0,
-                            "FuelSurchargeTotal": 0,
-                            "DiscountTotal": 0,
-                            "SupplementTotal": 0,
-                            "TaxDetails": [],
-                            "InfantBaggage": 0,
-                            "BaggagePiece": 0,
-                            "PersonalBaggage": 3
-                        },
-                        {
-                            "FlightKey": "Q09NRk9SVCNYQyMxMjEjSEFKI0FZVCNTIzIjNi4wNi4yMDI2IDA1OjAwOjAw#03470de9-12f4-40c4-8d72-ec723e7d0206",
-                            "RestPax": 6,
-                            "FreePax": 6,
-                            "PriceBandCode": "S",
-                            "FareBasisCode": "SRCOM",
-                            "AirFareCode": "COMFORT",
-                            "AirFareName": "Comfort",
-                            "AirFareRules": [],
-                            "CabinClass": 0,
-                            "Baggage": 20,
-                            "HandLuggage": 0,
-                            "Fare": [
-                                {
-                                    "TravellerType": 1,
-                                    "ServiceCharge": 0,
-                                    "FuelSurcharge": 0,
-                                    "BasePrice": 154.11,
-                                    "TaxPrice": 0,
-                                    "DiscountPrice": 0,
-                                    "SupplementPrice": 0,
-                                    "TaxDetails": [],
-                                    "Price": 154.11
-                                },
-                                {
-                                    "TravellerType": 2,
-                                    "ServiceCharge": 0,
-                                    "FuelSurcharge": 0,
-                                    "BasePrice": 154.11,
-                                    "TaxPrice": 0,
-                                    "DiscountPrice": 0,
-                                    "SupplementPrice": 0,
-                                    "TaxDetails": [],
-                                    "Price": 154.11
-                                },
-                                {
-                                    "TravellerType": 3,
-                                    "ServiceCharge": 0,
-                                    "FuelSurcharge": 0,
-                                    "BasePrice": 0,
-                                    "TaxPrice": 0,
-                                    "DiscountPrice": 0,
-                                    "SupplementPrice": 0,
-                                    "TaxDetails": [],
-                                    "Price": 0
-                                }
-                            ],
-                            "SubTotal": 462.33,
-                            "BaseTotal": 462.33,
+                            "SubTotal": 279.5,
+                            "BaseTotal": 279.5,
                             "TaxTotal": 0,
                             "FuelSurchargeTotal": 0,
                             "DiscountTotal": 0,

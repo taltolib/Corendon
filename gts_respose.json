@@ -1,11 +1,11 @@
 [
     {
-        "offer_id": "c90b8327-41cb-48fd-9de5-36cb68b2b0fa",
+        "offer_id": "d505b058-2ae3-4b54-bfb5-4e6b5f5e1e06",
         "price_info": {
-            "price": 379.38,
+            "price": 252.2,
             "currency": "USD",
             "fee_amount": 0.0,
-            "base_amount": 379.38,
+            "base_amount": 252.2,
             "commission_amount": 0.0,
             "from_commission_amount": 0.0,
             "to_commission_amount": 0.0
@@ -20,48 +20,23 @@
                 "passenger_type": "ADT",
                 "currency": "USD",
                 "quantity": 2,
-                "single_base_amount": 126.46,
+                "single_base_amount": 126.1,
                 "single_tax_amount": 0.0,
                 "single_tax_details": 0.0,
                 "fee_amount": 0.0,
                 "to_commission_amount": 0.0,
                 "commission_amount": 0.0,
-                "single_total_amount": 126.46,
-                "base_total_amount": 252.92,
+                "single_total_amount": 126.1,
+                "base_total_amount": 252.2,
                 "tax_total_amount": 0.0,
-                "total_amount": 252.92,
-                "payable_amount": 252.92,
+                "total_amount": 252.2,
+                "payable_amount": 252.2,
                 "single_fee_amount": 0.0,
                 "single_service_fee_amount": 0.0,
                 "single_commission_amount": 0.0,
                 "single_from_commission_amount": 0.0,
                 "single_to_commission_amount": 0.0,
-                "single_payable_amount": 126.46,
-                "service_fee_amount": 0.0,
-                "from_commission_amount": 0.0,
-                "profit_commission_amount": 0.0
-            },
-            {
-                "passenger_type": "CHD",
-                "currency": "USD",
-                "quantity": 1,
-                "single_base_amount": 126.46,
-                "single_tax_amount": 0.0,
-                "single_tax_details": 0.0,
-                "fee_amount": 0.0,
-                "to_commission_amount": 0.0,
-                "commission_amount": 0.0,
-                "single_total_amount": 126.46,
-                "base_total_amount": 126.46,
-                "tax_total_amount": 0.0,
-                "total_amount": 126.46,
-                "payable_amount": 126.46,
-                "single_fee_amount": 0.0,
-                "single_service_fee_amount": 0.0,
-                "single_commission_amount": 0.0,
-                "single_from_commission_amount": 0.0,
-                "single_to_commission_amount": 0.0,
-                "single_payable_amount": 126.46,
+                "single_payable_amount": 126.1,
                 "service_fee_amount": 0.0,
                 "from_commission_amount": 0.0,
                 "profit_commission_amount": 0.0
@@ -70,47 +45,14 @@
         "baggages_info": [
             {
                 "segment_keys": [
-                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
-                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                    "a4509b11a64252a11cb845874b7b26b349f7eaff767169fb24cd9eeb8ad94bf4",
+                    "59b772e3fbfef097300bb8859e96aa82554e6c6d82439b2aab0787c668133350"
                 ],
                 "leg": [
                     "AYT-HAJ",
                     "HAJ-AYT"
                 ],
                 "passenger_type": "ADT",
-                "baggage": {
-                    "value": 0.0,
-                    "unit": "kg",
-                    "size": {
-                        "height": null,
-                        "width": null,
-                        "length": null,
-                        "unit": ""
-                    }
-                },
-                "hand_baggage": {
-                    "value": 1.0,
-                    "unit": "pc",
-                    "weight": 10.0,
-                    "size": {
-                        "height": null,
-                        "width": null,
-                        "length": null,
-                        "unit": ""
-                    }
-                },
-                "description": ""
-            },
-            {
-                "segment_keys": [
-                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
-                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
-                ],
-                "leg": [
-                    "AYT-HAJ",
-                    "HAJ-AYT"
-                ],
-                "passenger_type": "CHD",
                 "baggage": {
                     "value": 0.0,
                     "unit": "kg",
@@ -138,35 +80,14 @@
         "fares_info": [
             {
                 "segment_keys": [
-                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
-                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                    "a4509b11a64252a11cb845874b7b26b349f7eaff767169fb24cd9eeb8ad94bf4",
+                    "59b772e3fbfef097300bb8859e96aa82554e6c6d82439b2aab0787c668133350"
                 ],
                 "leg": [
                     "AYT-HAJ",
                     "HAJ-AYT"
                 ],
                 "passenger_type": "ADT",
-                "seats": 6,
-                "upsell": {
-                    "name": "PUBLISHED",
-                    "services": []
-                },
-                "fare_code": "VRECO",
-                "service_class": "Eco",
-                "service_class_code": "EKO",
-                "booking_class": "V",
-                "description": ""
-            },
-            {
-                "segment_keys": [
-                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
-                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
-                ],
-                "leg": [
-                    "AYT-HAJ",
-                    "HAJ-AYT"
-                ],
-                "passenger_type": "CHD",
                 "seats": 6,
                 "upsell": {
                     "name": "PUBLISHED",
@@ -197,7 +118,7 @@
                 "segments": [
                     {
                         "segment_index": 1,
-                        "segment_key": "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                        "segment_key": "a4509b11a64252a11cb845874b7b26b349f7eaff767169fb24cd9eeb8ad94bf4",
                         "leg": "AYT-HAJ",
                         "flight_number": "124",
                         "departure_country": "Antalya",
@@ -258,7 +179,7 @@
                 "segments": [
                     {
                         "segment_index": 1,
-                        "segment_key": "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca",
+                        "segment_key": "59b772e3fbfef097300bb8859e96aa82554e6c6d82439b2aab0787c668133350",
                         "leg": "HAJ-AYT",
                         "flight_number": "123",
                         "departure_country": "Hannover",
@@ -317,15 +238,17 @@
             "provider_name": "Corendon Airlines",
             "provider_office": ""
         },
-        "other": {}
+        "other": {
+            "FlightKey": []
+        }
     },
     {
-        "offer_id": "450877f9-b382-4e21-9021-1a2b38db876e",
+        "offer_id": "3213853f-7dd9-4383-aaff-be080d205ddf",
         "price_info": {
-            "price": 473.73,
+            "price": 314.94,
             "currency": "USD",
             "fee_amount": 0.0,
-            "base_amount": 473.73,
+            "base_amount": 314.94,
             "commission_amount": 0.0,
             "from_commission_amount": 0.0,
             "to_commission_amount": 0.0
@@ -340,48 +263,23 @@
                 "passenger_type": "ADT",
                 "currency": "USD",
                 "quantity": 2,
-                "single_base_amount": 157.91,
+                "single_base_amount": 157.47,
                 "single_tax_amount": 0.0,
                 "single_tax_details": 0.0,
                 "fee_amount": 0.0,
                 "to_commission_amount": 0.0,
                 "commission_amount": 0.0,
-                "single_total_amount": 157.91,
-                "base_total_amount": 315.82,
+                "single_total_amount": 157.47,
+                "base_total_amount": 314.94,
                 "tax_total_amount": 0.0,
-                "total_amount": 315.82,
-                "payable_amount": 315.82,
+                "total_amount": 314.94,
+                "payable_amount": 314.94,
                 "single_fee_amount": 0.0,
                 "single_service_fee_amount": 0.0,
                 "single_commission_amount": 0.0,
                 "single_from_commission_amount": 0.0,
                 "single_to_commission_amount": 0.0,
-                "single_payable_amount": 157.91,
-                "service_fee_amount": 0.0,
-                "from_commission_amount": 0.0,
-                "profit_commission_amount": 0.0
-            },
-            {
-                "passenger_type": "CHD",
-                "currency": "USD",
-                "quantity": 1,
-                "single_base_amount": 157.91,
-                "single_tax_amount": 0.0,
-                "single_tax_details": 0.0,
-                "fee_amount": 0.0,
-                "to_commission_amount": 0.0,
-                "commission_amount": 0.0,
-                "single_total_amount": 157.91,
-                "base_total_amount": 157.91,
-                "tax_total_amount": 0.0,
-                "total_amount": 157.91,
-                "payable_amount": 157.91,
-                "single_fee_amount": 0.0,
-                "single_service_fee_amount": 0.0,
-                "single_commission_amount": 0.0,
-                "single_from_commission_amount": 0.0,
-                "single_to_commission_amount": 0.0,
-                "single_payable_amount": 157.91,
+                "single_payable_amount": 157.47,
                 "service_fee_amount": 0.0,
                 "from_commission_amount": 0.0,
                 "profit_commission_amount": 0.0
@@ -390,47 +288,14 @@
         "baggages_info": [
             {
                 "segment_keys": [
-                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
-                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                    "a4509b11a64252a11cb845874b7b26b349f7eaff767169fb24cd9eeb8ad94bf4",
+                    "59b772e3fbfef097300bb8859e96aa82554e6c6d82439b2aab0787c668133350"
                 ],
                 "leg": [
                     "AYT-HAJ",
                     "HAJ-AYT"
                 ],
                 "passenger_type": "ADT",
-                "baggage": {
-                    "value": 20.0,
-                    "unit": "kg",
-                    "size": {
-                        "height": null,
-                        "width": null,
-                        "length": null,
-                        "unit": ""
-                    }
-                },
-                "hand_baggage": {
-                    "value": 1.0,
-                    "unit": "pc",
-                    "weight": 0.0,
-                    "size": {
-                        "height": null,
-                        "width": null,
-                        "length": null,
-                        "unit": ""
-                    }
-                },
-                "description": ""
-            },
-            {
-                "segment_keys": [
-                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
-                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
-                ],
-                "leg": [
-                    "AYT-HAJ",
-                    "HAJ-AYT"
-                ],
-                "passenger_type": "CHD",
                 "baggage": {
                     "value": 20.0,
                     "unit": "kg",
@@ -458,35 +323,14 @@
         "fares_info": [
             {
                 "segment_keys": [
-                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
-                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
+                    "a4509b11a64252a11cb845874b7b26b349f7eaff767169fb24cd9eeb8ad94bf4",
+                    "59b772e3fbfef097300bb8859e96aa82554e6c6d82439b2aab0787c668133350"
                 ],
                 "leg": [
                     "AYT-HAJ",
                     "HAJ-AYT"
                 ],
                 "passenger_type": "ADT",
-                "seats": 6,
-                "upsell": {
-                    "name": "PUBLISHED",
-                    "services": []
-                },
-                "fare_code": "VRCOM",
-                "service_class": "Comfort",
-                "service_class_code": "COMFORT",
-                "booking_class": "V",
-                "description": ""
-            },
-            {
-                "segment_keys": [
-                    "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
-                    "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca"
-                ],
-                "leg": [
-                    "AYT-HAJ",
-                    "HAJ-AYT"
-                ],
-                "passenger_type": "CHD",
                 "seats": 6,
                 "upsell": {
                     "name": "PUBLISHED",
@@ -517,7 +361,7 @@
                 "segments": [
                     {
                         "segment_index": 1,
-                        "segment_key": "4b080e53eed1559600f0e3070e71bb005059d6a6d8d67aa13d71b53f4205cbd9",
+                        "segment_key": "a4509b11a64252a11cb845874b7b26b349f7eaff767169fb24cd9eeb8ad94bf4",
                         "leg": "AYT-HAJ",
                         "flight_number": "124",
                         "departure_country": "Antalya",
@@ -578,7 +422,7 @@
                 "segments": [
                     {
                         "segment_index": 1,
-                        "segment_key": "250c113bf84944ec4879959c2e50ce13e7c2a0f2f2d1888f620bf0eedee742ca",
+                        "segment_key": "59b772e3fbfef097300bb8859e96aa82554e6c6d82439b2aab0787c668133350",
                         "leg": "HAJ-AYT",
                         "flight_number": "123",
                         "departure_country": "Hannover",
@@ -637,6 +481,8 @@
             "provider_name": "Corendon Airlines",
             "provider_office": ""
         },
-        "other": {}
+        "other": {
+            "FlightKey": []
+        }
     }
 ]

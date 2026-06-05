@@ -380,7 +380,7 @@ def convert_search_response(corendon_res: dict) -> list[Offer]:
                 print(price_info, "ответ price_info ⬇️")
 
                 offer = Offer(
-                    offer_id=str(uuid.uuid4()),
+                    offer_id=fare_data.get("FlightKey", str(uuid.uuid4())),
                     price_info=price_info,
                     reprice_available=True,
                     upsell=has_upsell,
@@ -405,9 +405,8 @@ def convert_search_response(corendon_res: dict) -> list[Offer]:
                         provider_name="Corendon Airlines",
                         provider_office="",
                     ),
-                    other= []
                 )
-                offers.append(offer.model_dump())
+                offers.append(offer)
 
     else:
         for out_route, out_fares in directions[0]:
@@ -416,15 +415,8 @@ def convert_search_response(corendon_res: dict) -> list[Offer]:
 
             for ret_route, _ in directions[1]:
                 routes = [out_route, ret_route]
-
-                out_keys = [seg.segment_key for seg in out_route.segments]
-                ret_keys = [seg.segment_key for seg in ret_route.segments]
-                segment_keys = out_keys + ret_keys
-
-                out_legs = [seg.leg for seg in out_route.segments]
-                ret_legs = [seg.leg for seg in ret_route.segments]
-                legs = out_legs + ret_legs
-
+                segment_keys = [seg.segment_key for seg in out_route.segments] + [seg.segment_key for seg in ret_route.segments]
+                legs = [seg.leg for seg in out_route.segments] + [seg.leg for seg in ret_route.segments]
                 has_upsell = len(out_fares) > 1
 
                 for fare_data in out_fares:
@@ -434,7 +426,7 @@ def convert_search_response(corendon_res: dict) -> list[Offer]:
 
 
                     offer = Offer(
-                        offer_id=str(uuid.uuid4()),
+                        offer_id=fare_data.get("FlightKey", str(uuid.uuid4())),
                         price_info=price_info,
                         reprice_available=True,
                         upsell=has_upsell,
@@ -459,8 +451,7 @@ def convert_search_response(corendon_res: dict) -> list[Offer]:
                             provider_name="Corendon Airlines",
                             provider_office="",
                         ),
-                        other={}
                     )
-                    offers.append(offer.model_dump())
+                    offers.append(offer)
 
     return offers

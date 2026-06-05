@@ -9,6 +9,11 @@ from app.gts.schemas.common.provider import Provider, SupplierProvider
 from app.gts.schemas.common.route import Route
 
 
+class Other(BaseModel):
+    FlightKey: list[str]
+
+
+
 class Offer (BaseModel) :
     offer_id: str
     price_info: PriceInfo
@@ -23,4 +28,6 @@ class Offer (BaseModel) :
     routes: list[Route]
     provider: Provider
     supplier_provider: SupplierProvider
-    other :  Optional[dict[str , Any]]  =  Field(default=None)
+    other :  Optional[Other]  =  Field(default=None)
+
+

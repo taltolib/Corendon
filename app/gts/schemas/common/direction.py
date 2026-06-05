@@ -13,10 +13,8 @@ class GtsSearchRequest(BaseModel):
     inf: int
     ins: int = 0
     currency: str = "USD"
-    cabin_class: str = Field(default="", alias="class")
+    cabin_class: str = Field(default="", )
     flexible: bool = False
     direct: bool = False
     airlines: list[str] = []
     passengers_ids: list = []
-
-    model_config = {"populate_by_name": True}
