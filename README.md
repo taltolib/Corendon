@@ -77,8 +77,8 @@ Corendon/
 **Body:**
 ```json
 {
-  "client_id": "CAI/fxQKTKpe63",
-  "client_secret": "uCQA2eddtbXLlrrQ",
+  "client_id": "CAI/*********",
+  "client_secret": "u*********Q",
   "username": "your_username",
   "password": "your_password"
 }
