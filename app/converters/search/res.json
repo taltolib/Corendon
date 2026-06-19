@@ -1,0 +1,2398 @@
+{
+    "status": "In process",
+    "message": "success",
+    "code": 200,
+    "data": {
+        "request_id": "abfb871d-625a-4882-8cac-2c48e2d0aa1e",
+        "trip_type": "OW",
+        "sort_type": "price",
+        "currency": "USD",
+        "count": 10,
+        "next_token": "1780047562597-1",
+        "offers": [
+            {
+                "offer_id": "4a199d7a-f9e0-4a48-a6b2-228ecb2740db",
+                "price_info": {
+                    "price": 178.17,
+                    "currency": "USD",
+                    "fee_amount": 0,
+                    "base_amount": 19.93,
+                    "commission_amount": 0,
+                    "from_commission_amount": 0,
+                    "to_commission_amount": 0
+                },
+                "upsell": true,
+                "booking": true,
+                "is_baggage_info_provided_by_pax": false,
+                "is_no_changing_airport": false,
+                "price_details": [
+                    {
+                        "passenger_type": "ADT",
+                        "currency": "USD",
+                        "quantity": 1,
+                        "single_base_amount": 19.93,
+                        "single_tax_amount": 158.24,
+                        "single_tax_details": [
+                            {
+                                "code": "FX",
+                                "price": 139679,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "UZ",
+                                "price": 209518,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "RI",
+                                "price": 126130,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YQ",
+                                "price": 1229173,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YR",
+                                "price": 181582,
+                                "currency": "UZS"
+                            }
+                        ],
+                        "fee_amount": 0,
+                        "commission_amount": 0,
+                        "single_total_amount": 178.17,
+                        "base_total_amount": 19.93,
+                        "tax_total_amount": 158.24,
+                        "total_amount": 178.17,
+                        "payable_amount": 178.15,
+                        "single_fee_amount": 0,
+                        "single_service_fee_amount": 0,
+                        "single_commission_amount": 0,
+                        "single_from_commission_amount": 0,
+                        "single_to_commission_amount": 0,
+                        "single_payable_amount": 178.15,
+                        "service_fee_amount": 0,
+                        "from_commission_amount": 0,
+                        "to_commission_amount": 0,
+                        "profit_commission_amount": 0
+                    }
+                ],
+                "baggages_info": [
+                    {
+                        "segment_keys": [
+                            "47ea27b97c150fd3704379647f3bf62a3070dda9c03713e0bb3f345263abeca3"
+                        ],
+                        "leg": [
+                            "TAS-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "hand_baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "description": ""
+                    }
+                ],
+                "fares_info": [
+                    {
+                        "segment_keys": [
+                            "47ea27b97c150fd3704379647f3bf62a3070dda9c03713e0bb3f345263abeca3"
+                        ],
+                        "leg": [
+                            "TAS-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY LITE",
+                            "services": []
+                        },
+                        "fare_code": "PLCLI1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "P",
+                        "description": ""
+                    }
+                ],
+                "routes": [
+                    {
+                        "route_index": 1,
+                        "direction": "TAS-MOW",
+                        "refundable": {
+                            "status": null,
+                            "type": null
+                        },
+                        "reissue": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "stops": 0,
+                        "trip_time_minutes": 260,
+                        "flight_time_minutes": 260,
+                        "segments": [
+                            {
+                                "segment_index": 1,
+                                "segment_key": "47ea27b97c150fd3704379647f3bf62a3070dda9c03713e0bb3f345263abeca3",
+                                "leg": "TAS-VKO",
+                                "flight_number": "9613",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Tashkent",
+                                "departure_city_code": "TAS",
+                                "departure_airport": "Tashkent International Airport",
+                                "departure_airport_code": "TAS",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "06:00",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Russia",
+                                "arrival_country_code": "RU",
+                                "arrival_city": "Moscow",
+                                "arrival_city_code": "MOW",
+                                "arrival_airport": "Vnukovo Intl",
+                                "arrival_airport_code": "VKO",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "08:20",
+                                "arrival_timezone": "UTC+03:00",
+                                "duration_minutes": 260,
+                                "stop_time_minutes": 0,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "P",
+                                "airplane_info": {
+                                    "airplane": "32N",
+                                    "airplane_code": "32N",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "provider": {
+                    "provider_id": "bcf30b93356b4958a0254fcc64bb9c8c",
+                    "name": "AVVA",
+                    "index": null,
+                    "provider_index": null,
+                    "type": "own",
+                    "supplier_id": "57419286c7d44e2f9471efe033c2160d",
+                    "supplier_name": "GALILEO"
+                }
+            },
+            {
+                "offer_id": "681fa5f4-416d-4929-84c4-0f0eab9d1895",
+                "price_info": {
+                    "price": 184.36,
+                    "currency": "USD",
+                    "fee_amount": 0,
+                    "base_amount": 24.61,
+                    "commission_amount": 0,
+                    "from_commission_amount": 0,
+                    "to_commission_amount": 0
+                },
+                "upsell": true,
+                "booking": true,
+                "is_baggage_info_provided_by_pax": false,
+                "is_no_changing_airport": false,
+                "price_details": [
+                    {
+                        "passenger_type": "ADT",
+                        "currency": "USD",
+                        "quantity": 1,
+                        "single_base_amount": 24.61,
+                        "single_tax_amount": 159.75,
+                        "single_tax_details": [
+                            {
+                                "code": "FX",
+                                "price": 139679,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "UZ",
+                                "price": 209518,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "RI",
+                                "price": 269951,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YQ",
+                                "price": 1103462,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YR",
+                                "price": 181582,
+                                "currency": "UZS"
+                            }
+                        ],
+                        "fee_amount": 0,
+                        "commission_amount": 0,
+                        "single_total_amount": 184.36,
+                        "base_total_amount": 24.61,
+                        "tax_total_amount": 159.75,
+                        "total_amount": 184.36,
+                        "payable_amount": 184.36,
+                        "single_fee_amount": 0,
+                        "single_service_fee_amount": 0,
+                        "single_commission_amount": 0,
+                        "single_from_commission_amount": 0,
+                        "single_to_commission_amount": 0,
+                        "single_payable_amount": 184.36,
+                        "service_fee_amount": 0,
+                        "from_commission_amount": 0,
+                        "to_commission_amount": 0,
+                        "profit_commission_amount": 0
+                    }
+                ],
+                "baggages_info": [
+                    {
+                        "segment_keys": [
+                            "47e8ec7d6b6ddf9373a94b2ac38980995f17ea2f3fb7a1454f9432b90f00868c"
+                        ],
+                        "leg": [
+                            "TAS-DME"
+                        ],
+                        "passenger_type": "ADT",
+                        "baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "hand_baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "description": ""
+                    }
+                ],
+                "fares_info": [
+                    {
+                        "segment_keys": [
+                            "47e8ec7d6b6ddf9373a94b2ac38980995f17ea2f3fb7a1454f9432b90f00868c"
+                        ],
+                        "leg": [
+                            "TAS-DME"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY LITE",
+                            "services": []
+                        },
+                        "fare_code": "PLI1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "P",
+                        "description": ""
+                    }
+                ],
+                "routes": [
+                    {
+                        "route_index": 1,
+                        "direction": "TAS-MOW",
+                        "refundable": {
+                            "status": null,
+                            "type": null
+                        },
+                        "reissue": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "stops": 0,
+                        "trip_time_minutes": 250,
+                        "flight_time_minutes": 250,
+                        "segments": [
+                            {
+                                "segment_index": 1,
+                                "segment_key": "47e8ec7d6b6ddf9373a94b2ac38980995f17ea2f3fb7a1454f9432b90f00868c",
+                                "leg": "TAS-DME",
+                                "flight_number": "603",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Tashkent",
+                                "departure_city_code": "TAS",
+                                "departure_airport": "Tashkent International Airport",
+                                "departure_airport_code": "TAS",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "08:05",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Russia",
+                                "arrival_country_code": "RU",
+                                "arrival_city": "Moscow",
+                                "arrival_city_code": "MOW",
+                                "arrival_airport": "Domodedovo",
+                                "arrival_airport_code": "DME",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "10:15",
+                                "arrival_timezone": "UTC+03:00",
+                                "duration_minutes": 250,
+                                "stop_time_minutes": 0,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "P",
+                                "airplane_info": {
+                                    "airplane": "763",
+                                    "airplane_code": "763",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "provider": {
+                    "provider_id": "bcf30b93356b4958a0254fcc64bb9c8c",
+                    "name": "AVVA",
+                    "index": null,
+                    "provider_index": null,
+                    "type": "own",
+                    "supplier_id": "57419286c7d44e2f9471efe033c2160d",
+                    "supplier_name": "GALILEO"
+                }
+            },
+            {
+                "offer_id": "91c5b383-8958-4a65-be1c-1ff480c90650",
+                "price_info": {
+                    "price": 184.36,
+                    "currency": "USD",
+                    "fee_amount": 0,
+                    "base_amount": 24.61,
+                    "commission_amount": 0,
+                    "from_commission_amount": 0,
+                    "to_commission_amount": 0
+                },
+                "upsell": true,
+                "booking": true,
+                "is_baggage_info_provided_by_pax": false,
+                "is_no_changing_airport": false,
+                "price_details": [
+                    {
+                        "passenger_type": "ADT",
+                        "currency": "USD",
+                        "quantity": 1,
+                        "single_base_amount": 24.61,
+                        "single_tax_amount": 159.75,
+                        "single_tax_details": [
+                            {
+                                "code": "FX",
+                                "price": 139679,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "UZ",
+                                "price": 209518,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "RI",
+                                "price": 269951,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YQ",
+                                "price": 1103462,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YR",
+                                "price": 181582,
+                                "currency": "UZS"
+                            }
+                        ],
+                        "fee_amount": 0,
+                        "commission_amount": 0,
+                        "single_total_amount": 184.36,
+                        "base_total_amount": 24.61,
+                        "tax_total_amount": 159.75,
+                        "total_amount": 184.36,
+                        "payable_amount": 184.36,
+                        "single_fee_amount": 0,
+                        "single_service_fee_amount": 0,
+                        "single_commission_amount": 0,
+                        "single_from_commission_amount": 0,
+                        "single_to_commission_amount": 0,
+                        "single_payable_amount": 184.36,
+                        "service_fee_amount": 0,
+                        "from_commission_amount": 0,
+                        "to_commission_amount": 0,
+                        "profit_commission_amount": 0
+                    }
+                ],
+                "baggages_info": [
+                    {
+                        "segment_keys": [
+                            "a2222eefc709423ac0472657a1409a8453279b4ffe96551ee79387f7c28f1324"
+                        ],
+                        "leg": [
+                            "TAS-DME"
+                        ],
+                        "passenger_type": "ADT",
+                        "baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "hand_baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "description": ""
+                    }
+                ],
+                "fares_info": [
+                    {
+                        "segment_keys": [
+                            "a2222eefc709423ac0472657a1409a8453279b4ffe96551ee79387f7c28f1324"
+                        ],
+                        "leg": [
+                            "TAS-DME"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY LITE",
+                            "services": []
+                        },
+                        "fare_code": "PLI1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "P",
+                        "description": ""
+                    }
+                ],
+                "routes": [
+                    {
+                        "route_index": 1,
+                        "direction": "TAS-MOW",
+                        "refundable": {
+                            "status": null,
+                            "type": null
+                        },
+                        "reissue": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "stops": 0,
+                        "trip_time_minutes": 250,
+                        "flight_time_minutes": 250,
+                        "segments": [
+                            {
+                                "segment_index": 1,
+                                "segment_key": "a2222eefc709423ac0472657a1409a8453279b4ffe96551ee79387f7c28f1324",
+                                "leg": "TAS-DME",
+                                "flight_number": "601",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Tashkent",
+                                "departure_city_code": "TAS",
+                                "departure_airport": "Tashkent International Airport",
+                                "departure_airport_code": "TAS",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "19:20",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Russia",
+                                "arrival_country_code": "RU",
+                                "arrival_city": "Moscow",
+                                "arrival_city_code": "MOW",
+                                "arrival_airport": "Domodedovo",
+                                "arrival_airport_code": "DME",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "21:30",
+                                "arrival_timezone": "UTC+03:00",
+                                "duration_minutes": 250,
+                                "stop_time_minutes": 0,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "P",
+                                "airplane_info": {
+                                    "airplane": "763",
+                                    "airplane_code": "763",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "provider": {
+                    "provider_id": "bcf30b93356b4958a0254fcc64bb9c8c",
+                    "name": "AVVA",
+                    "index": null,
+                    "provider_index": null,
+                    "type": "own",
+                    "supplier_id": "57419286c7d44e2f9471efe033c2160d",
+                    "supplier_name": "GALILEO"
+                }
+            },
+            {
+                "offer_id": "394b94ee-b719-4caa-9d03-0618a7e5dc35",
+                "price_info": {
+                    "price": 200.42,
+                    "currency": "USD",
+                    "fee_amount": 0,
+                    "base_amount": 42.18,
+                    "commission_amount": 0,
+                    "from_commission_amount": 0,
+                    "to_commission_amount": 0
+                },
+                "upsell": true,
+                "booking": true,
+                "is_baggage_info_provided_by_pax": false,
+                "is_no_changing_airport": false,
+                "price_details": [
+                    {
+                        "passenger_type": "ADT",
+                        "currency": "USD",
+                        "quantity": 1,
+                        "single_base_amount": 42.18,
+                        "single_tax_amount": 158.24,
+                        "single_tax_details": [
+                            {
+                                "code": "FX",
+                                "price": 139679,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "UZ",
+                                "price": 209518,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "RI",
+                                "price": 126130,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YQ",
+                                "price": 1229173,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YR",
+                                "price": 181582,
+                                "currency": "UZS"
+                            }
+                        ],
+                        "fee_amount": 0,
+                        "commission_amount": 0,
+                        "single_total_amount": 200.42,
+                        "base_total_amount": 42.18,
+                        "tax_total_amount": 158.24,
+                        "total_amount": 200.42,
+                        "payable_amount": 200.42,
+                        "single_fee_amount": 0,
+                        "single_service_fee_amount": 0,
+                        "single_commission_amount": 0,
+                        "single_from_commission_amount": 0,
+                        "single_to_commission_amount": 0,
+                        "single_payable_amount": 200.42,
+                        "service_fee_amount": 0,
+                        "from_commission_amount": 0,
+                        "to_commission_amount": 0,
+                        "profit_commission_amount": 0
+                    }
+                ],
+                "baggages_info": [
+                    {
+                        "segment_keys": [
+                            "46ac170aa10d1eed276e833b93a034a75eb99af50dbea285cb79a5c6fd9a14b9"
+                        ],
+                        "leg": [
+                            "TAS-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "hand_baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "description": ""
+                    }
+                ],
+                "fares_info": [
+                    {
+                        "segment_keys": [
+                            "46ac170aa10d1eed276e833b93a034a75eb99af50dbea285cb79a5c6fd9a14b9"
+                        ],
+                        "leg": [
+                            "TAS-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY LITE",
+                            "services": []
+                        },
+                        "fare_code": "LLI1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "L",
+                        "description": ""
+                    }
+                ],
+                "routes": [
+                    {
+                        "route_index": 1,
+                        "direction": "TAS-MOW",
+                        "refundable": {
+                            "status": null,
+                            "type": null
+                        },
+                        "reissue": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "stops": 0,
+                        "trip_time_minutes": 260,
+                        "flight_time_minutes": 260,
+                        "segments": [
+                            {
+                                "segment_index": 1,
+                                "segment_key": "46ac170aa10d1eed276e833b93a034a75eb99af50dbea285cb79a5c6fd9a14b9",
+                                "leg": "TAS-VKO",
+                                "flight_number": "613",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Tashkent",
+                                "departure_city_code": "TAS",
+                                "departure_airport": "Tashkent International Airport",
+                                "departure_airport_code": "TAS",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "17:45",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Russia",
+                                "arrival_country_code": "RU",
+                                "arrival_city": "Moscow",
+                                "arrival_city_code": "MOW",
+                                "arrival_airport": "Vnukovo Intl",
+                                "arrival_airport_code": "VKO",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "20:05",
+                                "arrival_timezone": "UTC+03:00",
+                                "duration_minutes": 260,
+                                "stop_time_minutes": 0,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "L",
+                                "airplane_info": {
+                                    "airplane": "763",
+                                    "airplane_code": "763",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "provider": {
+                    "provider_id": "bcf30b93356b4958a0254fcc64bb9c8c",
+                    "name": "AVVA",
+                    "index": null,
+                    "provider_index": null,
+                    "type": "own",
+                    "supplier_id": "57419286c7d44e2f9471efe033c2160d",
+                    "supplier_name": "GALILEO"
+                }
+            },
+            {
+                "offer_id": "23619d07-aba9-4516-8fb7-8cfc1da0c79d",
+                "price_info": {
+                    "price": 283.63,
+                    "currency": "USD",
+                    "fee_amount": 0,
+                    "base_amount": 108.98,
+                    "commission_amount": 0,
+                    "from_commission_amount": 0,
+                    "to_commission_amount": 0
+                },
+                "upsell": true,
+                "booking": true,
+                "is_baggage_info_provided_by_pax": false,
+                "is_no_changing_airport": false,
+                "price_details": [
+                    {
+                        "passenger_type": "ADT",
+                        "currency": "USD",
+                        "quantity": 1,
+                        "single_base_amount": 108.98,
+                        "single_tax_amount": 174.65,
+                        "single_tax_details": [
+                            {
+                                "code": "FX",
+                                "price": 139679,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "UZ",
+                                "price": 209518,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "RI",
+                                "price": 126130,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YQ",
+                                "price": 1257109,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YR",
+                                "price": 349196,
+                                "currency": "UZS"
+                            }
+                        ],
+                        "fee_amount": 0,
+                        "commission_amount": 0,
+                        "single_total_amount": 283.63,
+                        "base_total_amount": 108.98,
+                        "tax_total_amount": 174.65,
+                        "total_amount": 283.63,
+                        "payable_amount": 283.63,
+                        "single_fee_amount": 0,
+                        "single_service_fee_amount": 0,
+                        "single_commission_amount": 0,
+                        "single_from_commission_amount": 0,
+                        "single_to_commission_amount": 0,
+                        "single_payable_amount": 283.63,
+                        "service_fee_amount": 0,
+                        "from_commission_amount": 0,
+                        "to_commission_amount": 0,
+                        "profit_commission_amount": 0
+                    }
+                ],
+                "baggages_info": [
+                    {
+                        "segment_keys": [
+                            "68607b3d193bd17ed75fa7e35f83d74238a58026df3e9e42cb20d8c763b1fc45",
+                            "c488f94647ab1cf4a689dc7ecae6c809e2377326e7b949e8e6aaec36947dbc40"
+                        ],
+                        "leg": [
+                            "TAS-NMA",
+                            "NMA-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "baggage": {
+                            "value": 1,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "hand_baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "description": ""
+                    }
+                ],
+                "fares_info": [
+                    {
+                        "segment_keys": [
+                            "68607b3d193bd17ed75fa7e35f83d74238a58026df3e9e42cb20d8c763b1fc45"
+                        ],
+                        "leg": [
+                            "TAS-NMA"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "YSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "Y",
+                        "description": ""
+                    },
+                    {
+                        "segment_keys": [
+                            "c488f94647ab1cf4a689dc7ecae6c809e2377326e7b949e8e6aaec36947dbc40"
+                        ],
+                        "leg": [
+                            "NMA-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "PLCSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "P",
+                        "description": ""
+                    }
+                ],
+                "routes": [
+                    {
+                        "route_index": 1,
+                        "direction": "TAS-MOW",
+                        "refundable": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "reissue": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "stops": 1,
+                        "trip_time_minutes": 895,
+                        "flight_time_minutes": 340,
+                        "segments": [
+                            {
+                                "segment_index": 1,
+                                "segment_key": "68607b3d193bd17ed75fa7e35f83d74238a58026df3e9e42cb20d8c763b1fc45",
+                                "leg": "TAS-NMA",
+                                "flight_number": "93",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Tashkent",
+                                "departure_city_code": "TAS",
+                                "departure_airport": "Tashkent International Airport",
+                                "departure_airport_code": "TAS",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "07:25",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Uzbekistan",
+                                "arrival_country_code": "UZ",
+                                "arrival_city": "Namangan",
+                                "arrival_city_code": "NMA",
+                                "arrival_airport": "Namangan",
+                                "arrival_airport_code": "NMA",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "08:25",
+                                "arrival_timezone": "UTC+05:00",
+                                "duration_minutes": 60,
+                                "stop_time_minutes": 555,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "Y",
+                                "airplane_info": {
+                                    "airplane": "32A",
+                                    "airplane_code": "32A",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            },
+                            {
+                                "segment_index": 2,
+                                "segment_key": "c488f94647ab1cf4a689dc7ecae6c809e2377326e7b949e8e6aaec36947dbc40",
+                                "leg": "NMA-VKO",
+                                "flight_number": "9619",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Namangan",
+                                "departure_city_code": "NMA",
+                                "departure_airport": "Namangan",
+                                "departure_airport_code": "NMA",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "17:40",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Russia",
+                                "arrival_country_code": "RU",
+                                "arrival_city": "Moscow",
+                                "arrival_city_code": "MOW",
+                                "arrival_airport": "Vnukovo Intl",
+                                "arrival_airport_code": "VKO",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "20:20",
+                                "arrival_timezone": "UTC+03:00",
+                                "duration_minutes": 280,
+                                "stop_time_minutes": 0,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "P",
+                                "airplane_info": {
+                                    "airplane": "32N",
+                                    "airplane_code": "32N",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "provider": {
+                    "provider_id": "bcf30b93356b4958a0254fcc64bb9c8c",
+                    "name": "AVVA",
+                    "index": null,
+                    "provider_index": null,
+                    "type": "own",
+                    "supplier_id": "57419286c7d44e2f9471efe033c2160d",
+                    "supplier_name": "GALILEO"
+                }
+            },
+            {
+                "offer_id": "09473503-08f8-4086-b75d-cd8ae33bc4b4",
+                "price_info": {
+                    "price": 312.93,
+                    "currency": "USD",
+                    "fee_amount": 0,
+                    "base_amount": 138.28,
+                    "commission_amount": 0,
+                    "from_commission_amount": 0,
+                    "to_commission_amount": 0
+                },
+                "upsell": true,
+                "booking": true,
+                "is_baggage_info_provided_by_pax": false,
+                "is_no_changing_airport": false,
+                "price_details": [
+                    {
+                        "passenger_type": "ADT",
+                        "currency": "USD",
+                        "quantity": 1,
+                        "single_base_amount": 138.28,
+                        "single_tax_amount": 174.65,
+                        "single_tax_details": [
+                            {
+                                "code": "FX",
+                                "price": 139679,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "UZ",
+                                "price": 209518,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "RI",
+                                "price": 126130,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YQ",
+                                "price": 1257109,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YR",
+                                "price": 349196,
+                                "currency": "UZS"
+                            }
+                        ],
+                        "fee_amount": 0,
+                        "commission_amount": 0,
+                        "single_total_amount": 312.93,
+                        "base_total_amount": 138.28,
+                        "tax_total_amount": 174.65,
+                        "total_amount": 312.93,
+                        "payable_amount": 312.92,
+                        "single_fee_amount": 0,
+                        "single_service_fee_amount": 0,
+                        "single_commission_amount": 0,
+                        "single_from_commission_amount": 0,
+                        "single_to_commission_amount": 0,
+                        "single_payable_amount": 312.92,
+                        "service_fee_amount": 0,
+                        "from_commission_amount": 0,
+                        "to_commission_amount": 0,
+                        "profit_commission_amount": 0
+                    }
+                ],
+                "baggages_info": [
+                    {
+                        "segment_keys": [
+                            "34369f06e46cafbc1eb0408bfb02ea5ae7cdc3637acbb6d34d2212e5bd3a0f58",
+                            "513e03ea9af4824ac1ad7742a83ea32fadb88c7f8315a7a03d6c293ac57a6792"
+                        ],
+                        "leg": [
+                            "TAS-TMJ",
+                            "TMJ-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "baggage": {
+                            "value": 1,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "hand_baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "description": ""
+                    }
+                ],
+                "fares_info": [
+                    {
+                        "segment_keys": [
+                            "34369f06e46cafbc1eb0408bfb02ea5ae7cdc3637acbb6d34d2212e5bd3a0f58"
+                        ],
+                        "leg": [
+                            "TAS-TMJ"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "YSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "Y",
+                        "description": ""
+                    },
+                    {
+                        "segment_keys": [
+                            "513e03ea9af4824ac1ad7742a83ea32fadb88c7f8315a7a03d6c293ac57a6792"
+                        ],
+                        "leg": [
+                            "TMJ-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "PLCSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "P",
+                        "description": ""
+                    }
+                ],
+                "routes": [
+                    {
+                        "route_index": 1,
+                        "direction": "TAS-MOW",
+                        "refundable": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "reissue": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "stops": 1,
+                        "trip_time_minutes": 500,
+                        "flight_time_minutes": 365,
+                        "segments": [
+                            {
+                                "segment_index": 1,
+                                "segment_key": "34369f06e46cafbc1eb0408bfb02ea5ae7cdc3637acbb6d34d2212e5bd3a0f58",
+                                "leg": "TAS-TMJ",
+                                "flight_number": "69",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Tashkent",
+                                "departure_city_code": "TAS",
+                                "departure_airport": "Tashkent International Airport",
+                                "departure_airport_code": "TAS",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "13:40",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Uzbekistan",
+                                "arrival_country_code": "UZ",
+                                "arrival_city": "Termez Uz",
+                                "arrival_city_code": "TMJ",
+                                "arrival_airport": "Termez Uz",
+                                "arrival_airport_code": "TMJ",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "15:00",
+                                "arrival_timezone": "UTC+05:00",
+                                "duration_minutes": 80,
+                                "stop_time_minutes": 135,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "Y",
+                                "airplane_info": {
+                                    "airplane": "32N",
+                                    "airplane_code": "32N",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            },
+                            {
+                                "segment_index": 2,
+                                "segment_key": "513e03ea9af4824ac1ad7742a83ea32fadb88c7f8315a7a03d6c293ac57a6792",
+                                "leg": "TMJ-VKO",
+                                "flight_number": "9609",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Termez Uz",
+                                "departure_city_code": "TMJ",
+                                "departure_airport": "Termez Uz",
+                                "departure_airport_code": "TMJ",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "17:15",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Russia",
+                                "arrival_country_code": "RU",
+                                "arrival_city": "Moscow",
+                                "arrival_city_code": "MOW",
+                                "arrival_airport": "Vnukovo Intl",
+                                "arrival_airport_code": "VKO",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "20:00",
+                                "arrival_timezone": "UTC+03:00",
+                                "duration_minutes": 285,
+                                "stop_time_minutes": 0,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "P",
+                                "airplane_info": {
+                                    "airplane": "32A",
+                                    "airplane_code": "32A",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "provider": {
+                    "provider_id": "bcf30b93356b4958a0254fcc64bb9c8c",
+                    "name": "AVVA",
+                    "index": null,
+                    "provider_index": null,
+                    "type": "own",
+                    "supplier_id": "57419286c7d44e2f9471efe033c2160d",
+                    "supplier_name": "GALILEO"
+                }
+            },
+            {
+                "offer_id": "7e36c755-66f7-407d-bbe6-882a0895b068",
+                "price_info": {
+                    "price": 315.27,
+                    "currency": "USD",
+                    "fee_amount": 0,
+                    "base_amount": 140.62,
+                    "commission_amount": 0,
+                    "from_commission_amount": 0,
+                    "to_commission_amount": 0
+                },
+                "upsell": true,
+                "booking": true,
+                "is_baggage_info_provided_by_pax": false,
+                "is_no_changing_airport": false,
+                "price_details": [
+                    {
+                        "passenger_type": "ADT",
+                        "currency": "USD",
+                        "quantity": 1,
+                        "single_base_amount": 140.62,
+                        "single_tax_amount": 174.65,
+                        "single_tax_details": [
+                            {
+                                "code": "FX",
+                                "price": 139679,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "UZ",
+                                "price": 209518,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "RI",
+                                "price": 126130,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YQ",
+                                "price": 1257109,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YR",
+                                "price": 349196,
+                                "currency": "UZS"
+                            }
+                        ],
+                        "fee_amount": 0,
+                        "commission_amount": 0,
+                        "single_total_amount": 315.27,
+                        "base_total_amount": 140.62,
+                        "tax_total_amount": 174.65,
+                        "total_amount": 315.27,
+                        "payable_amount": 315.27,
+                        "single_fee_amount": 0,
+                        "single_service_fee_amount": 0,
+                        "single_commission_amount": 0,
+                        "single_from_commission_amount": 0,
+                        "single_to_commission_amount": 0,
+                        "single_payable_amount": 315.27,
+                        "service_fee_amount": 0,
+                        "from_commission_amount": 0,
+                        "to_commission_amount": 0,
+                        "profit_commission_amount": 0
+                    }
+                ],
+                "baggages_info": [
+                    {
+                        "segment_keys": [
+                            "99878e5c716087401dee7e6a57eb485744cc8ae227178a3b8bc6fc81ae2ccf00",
+                            "8f856d5cdfcfeb1aff1109f80db6385559224c22aecab6c56f563acbd66820b9"
+                        ],
+                        "leg": [
+                            "TAS-UGC",
+                            "UGC-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "baggage": {
+                            "value": 1,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "hand_baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "description": ""
+                    }
+                ],
+                "fares_info": [
+                    {
+                        "segment_keys": [
+                            "99878e5c716087401dee7e6a57eb485744cc8ae227178a3b8bc6fc81ae2ccf00"
+                        ],
+                        "leg": [
+                            "TAS-UGC"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "YSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "Y",
+                        "description": ""
+                    },
+                    {
+                        "segment_keys": [
+                            "8f856d5cdfcfeb1aff1109f80db6385559224c22aecab6c56f563acbd66820b9"
+                        ],
+                        "leg": [
+                            "UGC-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "PLCSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "P",
+                        "description": ""
+                    }
+                ],
+                "routes": [
+                    {
+                        "route_index": 1,
+                        "direction": "TAS-MOW",
+                        "refundable": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "reissue": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "stops": 1,
+                        "trip_time_minutes": 795,
+                        "flight_time_minutes": 325,
+                        "segments": [
+                            {
+                                "segment_index": 1,
+                                "segment_key": "99878e5c716087401dee7e6a57eb485744cc8ae227178a3b8bc6fc81ae2ccf00",
+                                "leg": "TAS-UGC",
+                                "flight_number": "57",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Tashkent",
+                                "departure_city_code": "TAS",
+                                "departure_airport": "Tashkent International Airport",
+                                "departure_airport_code": "TAS",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "20:40",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Uzbekistan",
+                                "arrival_country_code": "UZ",
+                                "arrival_city": "Urgench",
+                                "arrival_city_code": "UGC",
+                                "arrival_airport": "Urgench",
+                                "arrival_airport_code": "UGC",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "22:10",
+                                "arrival_timezone": "UTC+05:00",
+                                "duration_minutes": 90,
+                                "stop_time_minutes": 470,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "Y",
+                                "airplane_info": {
+                                    "airplane": "320",
+                                    "airplane_code": "320",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            },
+                            {
+                                "segment_index": 2,
+                                "segment_key": "8f856d5cdfcfeb1aff1109f80db6385559224c22aecab6c56f563acbd66820b9",
+                                "leg": "UGC-VKO",
+                                "flight_number": "9615",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Urgench",
+                                "departure_city_code": "UGC",
+                                "departure_airport": "Urgench",
+                                "departure_airport_code": "UGC",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-20",
+                                "departure_time": "06:00",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Russia",
+                                "arrival_country_code": "RU",
+                                "arrival_city": "Moscow",
+                                "arrival_city_code": "MOW",
+                                "arrival_airport": "Vnukovo Intl",
+                                "arrival_airport_code": "VKO",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-20",
+                                "arrival_time": "07:55",
+                                "arrival_timezone": "UTC+03:00",
+                                "duration_minutes": 235,
+                                "stop_time_minutes": 0,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "P",
+                                "airplane_info": {
+                                    "airplane": "32A",
+                                    "airplane_code": "32A",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "provider": {
+                    "provider_id": "bcf30b93356b4958a0254fcc64bb9c8c",
+                    "name": "AVVA",
+                    "index": null,
+                    "provider_index": null,
+                    "type": "own",
+                    "supplier_id": "57419286c7d44e2f9471efe033c2160d",
+                    "supplier_name": "GALILEO"
+                }
+            },
+            {
+                "offer_id": "dcb88300-0dcf-48a1-9a6a-de4ed50f2824",
+                "price_info": {
+                    "price": 315.27,
+                    "currency": "USD",
+                    "fee_amount": 0,
+                    "base_amount": 140.62,
+                    "commission_amount": 0,
+                    "from_commission_amount": 0,
+                    "to_commission_amount": 0
+                },
+                "upsell": true,
+                "booking": true,
+                "is_baggage_info_provided_by_pax": false,
+                "is_no_changing_airport": false,
+                "price_details": [
+                    {
+                        "passenger_type": "ADT",
+                        "currency": "USD",
+                        "quantity": 1,
+                        "single_base_amount": 140.62,
+                        "single_tax_amount": 174.65,
+                        "single_tax_details": [
+                            {
+                                "code": "FX",
+                                "price": 139679,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "UZ",
+                                "price": 209518,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "RI",
+                                "price": 126130,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YQ",
+                                "price": 1257109,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YR",
+                                "price": 349196,
+                                "currency": "UZS"
+                            }
+                        ],
+                        "fee_amount": 0,
+                        "commission_amount": 0,
+                        "single_total_amount": 315.27,
+                        "base_total_amount": 140.62,
+                        "tax_total_amount": 174.65,
+                        "total_amount": 315.27,
+                        "payable_amount": 315.27,
+                        "single_fee_amount": 0,
+                        "single_service_fee_amount": 0,
+                        "single_commission_amount": 0,
+                        "single_from_commission_amount": 0,
+                        "single_to_commission_amount": 0,
+                        "single_payable_amount": 315.27,
+                        "service_fee_amount": 0,
+                        "from_commission_amount": 0,
+                        "to_commission_amount": 0,
+                        "profit_commission_amount": 0
+                    }
+                ],
+                "baggages_info": [
+                    {
+                        "segment_keys": [
+                            "e4a14ec9c28638323a716d958a4c2902ddd8b436df110f347a021c965dc089c6",
+                            "be9f2bb858c42477c0e144fcafa7cb5be108c368ecba69026fdb8b52bcf85c67"
+                        ],
+                        "leg": [
+                            "TAS-UGC",
+                            "UGC-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "baggage": {
+                            "value": 1,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "hand_baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "description": ""
+                    }
+                ],
+                "fares_info": [
+                    {
+                        "segment_keys": [
+                            "e4a14ec9c28638323a716d958a4c2902ddd8b436df110f347a021c965dc089c6"
+                        ],
+                        "leg": [
+                            "TAS-UGC"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "YSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "Y",
+                        "description": ""
+                    },
+                    {
+                        "segment_keys": [
+                            "be9f2bb858c42477c0e144fcafa7cb5be108c368ecba69026fdb8b52bcf85c67"
+                        ],
+                        "leg": [
+                            "UGC-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "PLCSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "P",
+                        "description": ""
+                    }
+                ],
+                "routes": [
+                    {
+                        "route_index": 1,
+                        "direction": "TAS-MOW",
+                        "refundable": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "reissue": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "stops": 1,
+                        "trip_time_minutes": 795,
+                        "flight_time_minutes": 325,
+                        "segments": [
+                            {
+                                "segment_index": 1,
+                                "segment_key": "e4a14ec9c28638323a716d958a4c2902ddd8b436df110f347a021c965dc089c6",
+                                "leg": "TAS-UGC",
+                                "flight_number": "55",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Tashkent",
+                                "departure_city_code": "TAS",
+                                "departure_airport": "Tashkent International Airport",
+                                "departure_airport_code": "TAS",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "13:45",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Uzbekistan",
+                                "arrival_country_code": "UZ",
+                                "arrival_city": "Urgench",
+                                "arrival_city_code": "UGC",
+                                "arrival_airport": "Urgench",
+                                "arrival_airport_code": "UGC",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "15:15",
+                                "arrival_timezone": "UTC+05:00",
+                                "duration_minutes": 90,
+                                "stop_time_minutes": 885,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "Y",
+                                "airplane_info": {
+                                    "airplane": "320",
+                                    "airplane_code": "320",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            },
+                            {
+                                "segment_index": 2,
+                                "segment_key": "be9f2bb858c42477c0e144fcafa7cb5be108c368ecba69026fdb8b52bcf85c67",
+                                "leg": "UGC-VKO",
+                                "flight_number": "9615",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Urgench",
+                                "departure_city_code": "UGC",
+                                "departure_airport": "Urgench",
+                                "departure_airport_code": "UGC",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-20",
+                                "departure_time": "06:00",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Russia",
+                                "arrival_country_code": "RU",
+                                "arrival_city": "Moscow",
+                                "arrival_city_code": "MOW",
+                                "arrival_airport": "Vnukovo Intl",
+                                "arrival_airport_code": "VKO",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-20",
+                                "arrival_time": "07:55",
+                                "arrival_timezone": "UTC+03:00",
+                                "duration_minutes": 235,
+                                "stop_time_minutes": 0,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "P",
+                                "airplane_info": {
+                                    "airplane": "32A",
+                                    "airplane_code": "32A",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "provider": {
+                    "provider_id": "bcf30b93356b4958a0254fcc64bb9c8c",
+                    "name": "AVVA",
+                    "index": null,
+                    "provider_index": null,
+                    "type": "own",
+                    "supplier_id": "57419286c7d44e2f9471efe033c2160d",
+                    "supplier_name": "GALILEO"
+                }
+            },
+            {
+                "offer_id": "935d6953-c7eb-4cdb-9153-1ff844ca67aa",
+                "price_info": {
+                    "price": 315.27,
+                    "currency": "USD",
+                    "fee_amount": 0,
+                    "base_amount": 140.62,
+                    "commission_amount": 0,
+                    "from_commission_amount": 0,
+                    "to_commission_amount": 0
+                },
+                "upsell": true,
+                "booking": true,
+                "is_baggage_info_provided_by_pax": false,
+                "is_no_changing_airport": false,
+                "price_details": [
+                    {
+                        "passenger_type": "ADT",
+                        "currency": "USD",
+                        "quantity": 1,
+                        "single_base_amount": 140.62,
+                        "single_tax_amount": 174.65,
+                        "single_tax_details": [
+                            {
+                                "code": "FX",
+                                "price": 139679,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "UZ",
+                                "price": 209518,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "RI",
+                                "price": 126130,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YQ",
+                                "price": 1257109,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YR",
+                                "price": 349196,
+                                "currency": "UZS"
+                            }
+                        ],
+                        "fee_amount": 0,
+                        "commission_amount": 0,
+                        "single_total_amount": 315.27,
+                        "base_total_amount": 140.62,
+                        "tax_total_amount": 174.65,
+                        "total_amount": 315.27,
+                        "payable_amount": 315.27,
+                        "single_fee_amount": 0,
+                        "single_service_fee_amount": 0,
+                        "single_commission_amount": 0,
+                        "single_from_commission_amount": 0,
+                        "single_to_commission_amount": 0,
+                        "single_payable_amount": 315.27,
+                        "service_fee_amount": 0,
+                        "from_commission_amount": 0,
+                        "to_commission_amount": 0,
+                        "profit_commission_amount": 0
+                    }
+                ],
+                "baggages_info": [
+                    {
+                        "segment_keys": [
+                            "0969c8818f5f12ce4300d1a6592ddb3352792769b2e5248f66a62f9f352042be",
+                            "a90cf5c8c7394a672fdb44a774d223473ba9b21f541517c46bd8cc472d286ca4"
+                        ],
+                        "leg": [
+                            "TAS-UGC",
+                            "UGC-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "baggage": {
+                            "value": 1,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "hand_baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "description": ""
+                    }
+                ],
+                "fares_info": [
+                    {
+                        "segment_keys": [
+                            "0969c8818f5f12ce4300d1a6592ddb3352792769b2e5248f66a62f9f352042be"
+                        ],
+                        "leg": [
+                            "TAS-UGC"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "YSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "Y",
+                        "description": ""
+                    },
+                    {
+                        "segment_keys": [
+                            "a90cf5c8c7394a672fdb44a774d223473ba9b21f541517c46bd8cc472d286ca4"
+                        ],
+                        "leg": [
+                            "UGC-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "PLCSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "P",
+                        "description": ""
+                    }
+                ],
+                "routes": [
+                    {
+                        "route_index": 1,
+                        "direction": "TAS-MOW",
+                        "refundable": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "reissue": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "stops": 1,
+                        "trip_time_minutes": 795,
+                        "flight_time_minutes": 325,
+                        "segments": [
+                            {
+                                "segment_index": 1,
+                                "segment_key": "0969c8818f5f12ce4300d1a6592ddb3352792769b2e5248f66a62f9f352042be",
+                                "leg": "TAS-UGC",
+                                "flight_number": "51",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Tashkent",
+                                "departure_city_code": "TAS",
+                                "departure_airport": "Tashkent International Airport",
+                                "departure_airport_code": "TAS",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "06:50",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Uzbekistan",
+                                "arrival_country_code": "UZ",
+                                "arrival_city": "Urgench",
+                                "arrival_city_code": "UGC",
+                                "arrival_airport": "Urgench",
+                                "arrival_airport_code": "UGC",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "08:20",
+                                "arrival_timezone": "UTC+05:00",
+                                "duration_minutes": 90,
+                                "stop_time_minutes": 1300,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "Y",
+                                "airplane_info": {
+                                    "airplane": "320",
+                                    "airplane_code": "320",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            },
+                            {
+                                "segment_index": 2,
+                                "segment_key": "a90cf5c8c7394a672fdb44a774d223473ba9b21f541517c46bd8cc472d286ca4",
+                                "leg": "UGC-VKO",
+                                "flight_number": "9615",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Urgench",
+                                "departure_city_code": "UGC",
+                                "departure_airport": "Urgench",
+                                "departure_airport_code": "UGC",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-20",
+                                "departure_time": "06:00",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Russia",
+                                "arrival_country_code": "RU",
+                                "arrival_city": "Moscow",
+                                "arrival_city_code": "MOW",
+                                "arrival_airport": "Vnukovo Intl",
+                                "arrival_airport_code": "VKO",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-20",
+                                "arrival_time": "07:55",
+                                "arrival_timezone": "UTC+03:00",
+                                "duration_minutes": 235,
+                                "stop_time_minutes": 0,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "P",
+                                "airplane_info": {
+                                    "airplane": "32A",
+                                    "airplane_code": "32A",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "provider": {
+                    "provider_id": "bcf30b93356b4958a0254fcc64bb9c8c",
+                    "name": "AVVA",
+                    "index": null,
+                    "provider_index": null,
+                    "type": "own",
+                    "supplier_id": "57419286c7d44e2f9471efe033c2160d",
+                    "supplier_name": "GALILEO"
+                }
+            },
+            {
+                "offer_id": "8428bc4a-9965-4d3b-92f6-72be6efb7ec1",
+                "price_info": {
+                    "price": 324.65,
+                    "currency": "USD",
+                    "fee_amount": 0,
+                    "base_amount": 150,
+                    "commission_amount": 0,
+                    "from_commission_amount": 0,
+                    "to_commission_amount": 0
+                },
+                "upsell": true,
+                "booking": true,
+                "is_baggage_info_provided_by_pax": false,
+                "is_no_changing_airport": false,
+                "price_details": [
+                    {
+                        "passenger_type": "ADT",
+                        "currency": "USD",
+                        "quantity": 1,
+                        "single_base_amount": 150,
+                        "single_tax_amount": 174.65,
+                        "single_tax_details": [
+                            {
+                                "code": "FX",
+                                "price": 139679,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "UZ",
+                                "price": 209518,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "RI",
+                                "price": 126130,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YQ",
+                                "price": 1257109,
+                                "currency": "UZS"
+                            },
+                            {
+                                "code": "YR",
+                                "price": 349196,
+                                "currency": "UZS"
+                            }
+                        ],
+                        "fee_amount": 0,
+                        "commission_amount": 0,
+                        "single_total_amount": 324.65,
+                        "base_total_amount": 150,
+                        "tax_total_amount": 174.65,
+                        "total_amount": 324.65,
+                        "payable_amount": 324.65,
+                        "single_fee_amount": 0,
+                        "single_service_fee_amount": 0,
+                        "single_commission_amount": 0,
+                        "single_from_commission_amount": 0,
+                        "single_to_commission_amount": 0,
+                        "single_payable_amount": 324.65,
+                        "service_fee_amount": 0,
+                        "from_commission_amount": 0,
+                        "to_commission_amount": 0,
+                        "profit_commission_amount": 0
+                    }
+                ],
+                "baggages_info": [
+                    {
+                        "segment_keys": [
+                            "667b2249a0cb002f18e1309f73fbd2988bc59a7da79e39ba57bfb93b6077679e",
+                            "7323d8bbdb57dee5668637cc29ab74acc622cb8686b031bf26021238649f0f62"
+                        ],
+                        "leg": [
+                            "TAS-SKD",
+                            "SKD-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "baggage": {
+                            "value": 1,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "hand_baggage": {
+                            "value": 0,
+                            "unit": "PC",
+                            "weight": 0,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "description": ""
+                    }
+                ],
+                "fares_info": [
+                    {
+                        "segment_keys": [
+                            "667b2249a0cb002f18e1309f73fbd2988bc59a7da79e39ba57bfb93b6077679e"
+                        ],
+                        "leg": [
+                            "TAS-SKD"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "YSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "Y",
+                        "description": ""
+                    },
+                    {
+                        "segment_keys": [
+                            "7323d8bbdb57dee5668637cc29ab74acc622cb8686b031bf26021238649f0f62"
+                        ],
+                        "leg": [
+                            "SKD-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 9,
+                        "upsell": {
+                            "name": "ECONOMY SMART",
+                            "services": []
+                        },
+                        "fare_code": "LSM1",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "L",
+                        "description": ""
+                    }
+                ],
+                "routes": [
+                    {
+                        "route_index": 1,
+                        "direction": "TAS-MOW",
+                        "refundable": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "reissue": {
+                            "status": true,
+                            "type": "extra"
+                        },
+                        "stops": 1,
+                        "trip_time_minutes": 385,
+                        "flight_time_minutes": 310,
+                        "segments": [
+                            {
+                                "segment_index": 1,
+                                "segment_key": "667b2249a0cb002f18e1309f73fbd2988bc59a7da79e39ba57bfb93b6077679e",
+                                "leg": "TAS-SKD",
+                                "flight_number": "41",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Tashkent",
+                                "departure_city_code": "TAS",
+                                "departure_airport": "Tashkent International Airport",
+                                "departure_airport_code": "TAS",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "19:05",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Uzbekistan",
+                                "arrival_country_code": "UZ",
+                                "arrival_city": "Samarkand",
+                                "arrival_city_code": "SKD",
+                                "arrival_airport": "Samarkand",
+                                "arrival_airport_code": "SKD",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "20:00",
+                                "arrival_timezone": "UTC+05:00",
+                                "duration_minutes": 55,
+                                "stop_time_minutes": 75,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "Y",
+                                "airplane_info": {
+                                    "airplane": "320",
+                                    "airplane_code": "320",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            },
+                            {
+                                "segment_index": 2,
+                                "segment_key": "7323d8bbdb57dee5668637cc29ab74acc622cb8686b031bf26021238649f0f62",
+                                "leg": "SKD-VKO",
+                                "flight_number": "605",
+                                "departure_country": "Uzbekistan",
+                                "departure_country_code": "UZ",
+                                "departure_city": "Samarkand",
+                                "departure_city_code": "SKD",
+                                "departure_airport": "Samarkand",
+                                "departure_airport_code": "SKD",
+                                "departure_terminal": "",
+                                "departure_date": "2026-07-19",
+                                "departure_time": "21:15",
+                                "departure_timezone": "UTC+05:00",
+                                "arrival_country": "Russia",
+                                "arrival_country_code": "RU",
+                                "arrival_city": "Moscow",
+                                "arrival_city_code": "MOW",
+                                "arrival_airport": "Vnukovo Intl",
+                                "arrival_airport_code": "VKO",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-07-19",
+                                "arrival_time": "23:30",
+                                "arrival_timezone": "UTC+03:00",
+                                "duration_minutes": 255,
+                                "stop_time_minutes": 0,
+                                "marketing_airline": "Uzbekistan Airways",
+                                "marketing_airline_code": "HY",
+                                "marketing_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "operating_airline": "Uzbekistan Airways",
+                                "operating_airline_code": "HY",
+                                "operating_airline_logo": "https://api2.globaltravel.space/media/airlines/HY.png",
+                                "seatmap_availability": true,
+                                "services_availability": true,
+                                "booking_class": "L",
+                                "airplane_info": {
+                                    "airplane": "320",
+                                    "airplane_code": "320",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "provider": {
+                    "provider_id": "bcf30b93356b4958a0254fcc64bb9c8c",
+                    "name": "AVVA",
+                    "index": null,
+                    "provider_index": null,
+                    "type": "own",
+                    "supplier_id": "57419286c7d44e2f9471efe033c2160d",
+                    "supplier_name": "GALILEO"
+                }
+            }
+        ]
+    },
+    "errors": []
+}

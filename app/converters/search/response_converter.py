@@ -1,9 +1,7 @@
 import hashlib
-import secrets
 import uuid
 from datetime import datetime
 from typing import Any
-
 from app.gts.schemas.common.airplane import AirplaneInfo
 from app.gts.schemas.common.enums import PassengerType, TripType
 from app.gts.schemas.common.baggage import BaggageInfo, BaggageAllowance, HandBaggage, BaggageSize
@@ -14,11 +12,10 @@ from app.gts.schemas.common.refund import RefundReissue
 from app.gts.schemas.common.route import Route
 from app.gts.schemas.common.segment import Segment
 from app.gts.schemas.common.upsell import Upsell
-from app.gts.schemas.offer import Offer
+from app.gts.schemas.offer import Offer, Other
 
 
 def get_passenger_counts(data: dict[str, Any]) -> dict[str, int]:
-
     passenger = data.get("PassengerCounts") or {}
 
     adt = passenger.get("AdultCount", 0)
@@ -32,32 +29,38 @@ def get_passenger_counts(data: dict[str, Any]) -> dict[str, int]:
     }
 
 
-def ms_to_minutes (ms : int) -> int :
+def ms_to_minutes(ms: int) -> int:
     return ms // 60000 if ms else 0
 
-def split_time ( dt_str : str) -> tuple[str ,str] :
 
-     if  dt_str == ""  or dt_str is None:
-         return "",""
-     try:
-         dt = datetime.fromisoformat(dt_str)
-         return dt.strftime("%Y-%m-%d"), dt.strftime("%H:%M")
-     except ValueError:
-         return dt_str[:10], dt_str[11:16]
-
-
-
+def generate_segment_key(seg_data: dict, route_data: dict) -> str:
+    parts = "|".join([
+        seg_data.get("FlightNumber", ""),
+        seg_data.get("DepartureDate", ""),
+        seg_data.get("AirlineCode", ""),
+        route_data.get("DepartureAirportCode", ""),
+        route_data.get("ArrivalAirportCode", ""),
+    ])
+    return hashlib.sha256(parts.encode()).hexdigest()
 
 
+def split_time(dt_str: str) -> tuple[str, str]:
+    if dt_str == "" or dt_str is None:
+        return "", ""
+    try:
+        dt = datetime.fromisoformat(dt_str)
+        return dt.strftime("%Y-%m-%d"), dt.strftime("%H:%M")
+    except ValueError:
+        return dt_str[:10], dt_str[11:16]
 
-def  passanger_type_gts ( trip_type : int ) -> PassengerType:
 
-    mapping = {1 : PassengerType.adult , 2 : PassengerType.child , 3 : PassengerType.infant }
+def passanger_type_gts(trip_type: int) -> PassengerType:
+    mapping = {1: PassengerType.adult, 2: PassengerType.child, 3: PassengerType.infant}
 
-    return  mapping.get(trip_type,PassengerType.adult)
+    return mapping.get(trip_type, PassengerType.adult)
 
 
-def trip_type_gts ( trip_type : str ) ->  TripType:
+def trip_type_gts(trip_type: str) -> TripType:
     match trip_type:
         case "1":
             return TripType.one_way
@@ -69,8 +72,7 @@ def trip_type_gts ( trip_type : str ) ->  TripType:
             raise ValueError(f"Неизвестный trip_type: {trip_type}")
 
 
-def convert_segment (seg_data: dict[str, Any], seg_index: int, route_data: dict[str, Any]) -> Segment:
-
+def convert_segment(seg_data: dict[str, Any], seg_index: int, route_data: dict[str, Any]) -> Segment:
     dep_date, dep_time = split_time(seg_data.get("DepartureDate", ""))
     arr_date, arr_time = split_time(seg_data.get("ArriveDate", ""))
 
@@ -82,15 +84,15 @@ def convert_segment (seg_data: dict[str, Any], seg_index: int, route_data: dict[
 
     leg = f"{dep_code}-{arr_code}"
 
-    seg_key = hashlib.sha256(secrets.token_hex(8).encode()).hexdigest() #Хозир генерацияни узим килябман
+    seg_key = generate_segment_key(seg_data, route_data)
 
     return Segment(
-        segment_index= seg_index,
+        segment_index=seg_index,
         segment_key=seg_key,
         leg=leg,
-        flight_number= seg_data.get("FlightNumber", ""),
+        flight_number=seg_data.get("FlightNumber", ""),
         departure_country=seg_data.get("DepartureCityName", ""),
-        departure_country_code= departure_c_code,
+        departure_country_code=departure_c_code,
         departure_city=seg_data.get("DepartureCityName", ""),
         departure_city_code=seg_data.get("DepartureCityCode", ""),
         departure_airport=seg_data.get("DepartureAirportName", ""),
@@ -110,7 +112,7 @@ def convert_segment (seg_data: dict[str, Any], seg_index: int, route_data: dict[
         arrival_time=arr_time,
         arrival_timezone="",
 
-        duration_minutes= ms_to_minutes(seg_data.get("TimeOnAir", 0)),
+        duration_minutes=ms_to_minutes(seg_data.get("TimeOnAir", 0)),
         stop_time_minutes=0,
 
         marketing_airline=seg_data.get("AirCraftType", ""),
@@ -123,13 +125,14 @@ def convert_segment (seg_data: dict[str, Any], seg_index: int, route_data: dict[
         seatmap_availability=False,
         services_availability=False,
         airplane_info=AirplaneInfo(
-            airplane=seg_data.get("AirCraftType", ""),#
-            airplane_code=seg_data.get("AirCraftType", ""), #
+            airplane=seg_data.get("AirCraftType", ""),
+            airplane_code=seg_data.get("AirCraftType", ""),
             seat_width="", seat_angle="",
             seat_scheme="", seat_distance="",
             has_wifi=False,
-    ),
-)
+        ),
+    )
+
 
 def convert_route(flight_route_data: dict[str, Any], route_index: int) -> Route:
     dep_code = flight_route_data.get("DepartureAirportCode", "")
@@ -149,13 +152,11 @@ def convert_route(flight_route_data: dict[str, Any], route_index: int) -> Route:
         direction=direction,
         refundable=RefundReissue(status=None, type=None),
         reissue=RefundReissue(status=None, type=None),
-        stops = len(segments) - 1 if len(segments) > 0 else 0,
+        stops=len(segments) - 1 if len(segments) > 0 else 0,
         trip_time_minutes=flight_time,
         flight_time_minutes=flight_time,
         segments=segments,
     )
-
-
 
 
 def convert_prices(
@@ -194,7 +195,7 @@ def convert_prices(
             quantity=quantity,
             single_base_amount=base,
             single_tax_amount=tax,
-            single_tax_details= 0.0,
+            single_tax_details=0.0,
             fee_amount=0.0,
             to_commission_amount=0.0,
             commission_amount=abs(discount),
@@ -219,7 +220,7 @@ def convert_prices(
         price=sub_total,
         currency=currency,
         fee_amount=0.0,
-        base_amount = fare_data.get("BaseTotal", sub_total),
+        base_amount=fare_data.get("BaseTotal", sub_total),
         commission_amount=0.0,
         from_commission_amount=0.0,
         to_commission_amount=0.0,
@@ -227,20 +228,20 @@ def convert_prices(
 
     return price_info, price_details
 
+
 def convert_fares_info(
         fare_data: dict[str, Any],
         segment_keys: list[str],
         legs: list[str],
         passenger_counts: dict[str, int],
 ) -> list[FareInfo]:
-
     quantity_map = {
         1: passenger_counts.get("ADT", 0),
         2: passenger_counts.get("CHD", 0),
         3: passenger_counts.get("INF", 0),
     }
 
-    fare_list= fare_data.get("Fare", [])
+    fare_list = fare_data.get("Fare", [])
     fares = []
 
     for fare in fare_list:
@@ -254,20 +255,20 @@ def convert_fares_info(
 
         fares.append(
             FareInfo(
-            segment_keys=segment_keys,
-            leg=legs,
-            passenger_type=passenger_type,
-            seats=fare_data.get("RestPax", 0),
-            upsell=Upsell(
-                name="PUBLISHED",
-                services=fare_data.get("AirFareRules", []),
-            ),
-            fare_code=fare_data.get("FareBasisCode", ""),
-            service_class=fare_data.get("AirFareName", ""),
-            service_class_code=fare_data.get("AirFareCode", ""),
-            booking_class=fare_data.get("PriceBandCode", ""),
-            description="",
-        ))
+                segment_keys=segment_keys,
+                leg=legs,
+                passenger_type=passenger_type,
+                seats=quantity,
+                upsell=Upsell(
+                    name="PUBLISHED",
+                    services=fare_data.get("AirFareRules", []),
+                ),
+                fare_code=fare_data.get("FareBasisCode", ""),
+                service_class=fare_data.get("AirFareName", ""),
+                service_class_code=fare_data.get("AirFareCode", ""),
+                booking_class=fare_data.get("PriceBandCode", ""),
+                description="",
+            ))
 
     return fares
 
@@ -278,7 +279,6 @@ def convert_baggages_info(
         legs: list[str],
         passenger_counts: dict[str, int],
 ) -> list[BaggageInfo]:
-
     quantity_map = {
         1: passenger_counts.get("ADT", 0),
         2: passenger_counts.get("CHD", 0),
@@ -286,10 +286,10 @@ def convert_baggages_info(
     }
 
     baggage_kg = fare_data.get("Baggage", 0)
-    hand_luggage_kg =fare_data.get("HandLuggage", 0)
+    hand_luggage_kg = fare_data.get("HandLuggage", 0)
     infant_baggage_kg = fare_data.get("InfantBaggage", 0)
 
-    fare_list= fare_data.get("Fare", [])
+    fare_list = fare_data.get("Fare", [])
     baggages: list[BaggageInfo] = []
 
     empty_size = BaggageSize(height=None, width=None, length=None, unit="")
@@ -329,7 +329,37 @@ def convert_baggages_info(
     return baggages
 
 
-def convert_search_response(corendon_res: dict) -> list[Offer]:
+def check_is_no_changing_airport(routes: list[Route]) -> bool:
+    for route in routes:
+        segments = route.segments
+
+        for i in range(1, len(segments)):
+            if segments[i - 1].arrival_airport_code != segments[i].departure_airport_code:
+                return True
+    return False
+
+
+def _build_provider() -> Provider:
+    return Provider(
+        provider_id="",
+        name="Corendon Airlines",
+        index=None,
+        type="",
+        is_charter=True,
+        provider_index=None,
+        supplier_id="",
+        supplier_name="Corendon Airlines",
+    )
+
+
+def _build_supplier_provider() -> SupplierProvider:
+    return SupplierProvider(
+        provider_name="Corendon Airlines",
+        provider_office="",
+    )
+
+
+def convert_search_response(corendon_res: dict) -> list:
     offers = []
     passenger_counts = get_passenger_counts(corendon_res)
     currency = corendon_res.get("Currency", "EUR")
@@ -341,7 +371,6 @@ def convert_search_response(corendon_res: dict) -> list[Offer]:
         routes_with_fares = []
 
         for route_variant in flight_group.get("Value", []):
-
             route = convert_route(
                 flight_route_data=route_variant.get("Key", {}),
                 route_index=route_index + 1,
@@ -357,101 +386,133 @@ def convert_search_response(corendon_res: dict) -> list[Offer]:
         return offers
 
     if len(directions) == 1:
+        # OW: один маршрут = один оффер, все тарифы внутри как fares_info
         for route, fare_variants in directions[0]:
 
+            if not fare_variants:
+                continue
+
             routes = [route]
+            segment_keys = [seg.segment_key for seg in route.segments]
+            legs = [seg.leg for seg in route.segments]
 
-            segment_keys = []
+            # Цена берётся из первого (базового) тарифа
+            base_fare = fare_variants[0]
+            price_info, price_details = convert_prices(base_fare, passenger_counts, currency)
 
-            for seg in route.segments:
-                segment_keys.append(seg.segment_key)
+            # В search показываем только базовый тариф — остальные доступны через /upsell
+            all_fares_info = convert_fares_info(base_fare, segment_keys, legs, passenger_counts)
+            all_baggages_info = convert_baggages_info(base_fare, segment_keys, legs, passenger_counts)
 
-            legs = []
-
-            for leg in route.segments:
-                legs.append(leg.leg)
-
-            has_upsell = len(fare_variants) > 1
-
-            for fare_data in fare_variants:
-                price_info, price_details = convert_prices(fare_data, passenger_counts, currency)
-                fares_info = convert_fares_info(fare_data, segment_keys, legs, passenger_counts)
-                baggages_info = convert_baggages_info(fare_data, segment_keys, legs, passenger_counts)
-                print(price_info, "ответ price_info ⬇️")
-
-                offer = Offer(
-                    offer_id=fare_data.get("FlightKey", str(uuid.uuid4())),
-                    price_info=price_info,
-                    reprice_available=True,
-                    upsell=has_upsell,
-                    booking=True,
-                    is_baggage_info_provided_by_pax=False,
-                    is_no_changing_airport=False,
-                    price_details=price_details,
-                    baggages_info=baggages_info,
-                    fares_info=fares_info,
-                    routes=routes,
-                    provider = Provider(
-                        provider_id="",
-                        name="Corendon Airlines",
-                        index=None,
-                        type="",
-                        is_charter=True,
-                        provider_index=None,
-                        supplier_id="",
-                        supplier_name="Corendon Airlines",
-                    ),
-                    supplier_provider = SupplierProvider(
-                        provider_name="Corendon Airlines",
-                        provider_office="",
-                    ),
+            offer = Offer(
+                offer_id=str(uuid.uuid4()),
+                price_info=price_info,
+                reprice_available=True,
+                upsell=len(fare_variants) > 1,
+                booking=True,
+                is_baggage_info_provided_by_pax=False,
+                is_no_changing_airport=check_is_no_changing_airport(routes),
+                price_details=price_details,
+                baggages_info=all_baggages_info,
+                fares_info=all_fares_info,
+                routes=routes,
+                provider=_build_provider(),
+                supplier_provider=_build_supplier_provider(),
+                other=Other(
+                    FlightKey=[f.get("FlightKey", "") for f in fare_variants]
                 )
-                offers.append(offer)
+            )
+            offers.append(offer.model_dump())
 
     else:
+        # RT: одна пара маршрутов = один оффер
         for out_route, out_fares in directions[0]:
-            print(out_fares, '⬇️  Апсел ⬇️')
-            print(out_route, '⬇️  Роут ⬇️')
+            for ret_route, ret_fares in directions[1]:
 
-            for ret_route, _ in directions[1]:
+                if not out_fares or not ret_fares:
+                    continue
+
                 routes = [out_route, ret_route]
-                segment_keys = [seg.segment_key for seg in out_route.segments] + [seg.segment_key for seg in ret_route.segments]
-                legs = [seg.leg for seg in out_route.segments] + [seg.leg for seg in ret_route.segments]
-                has_upsell = len(out_fares) > 1
 
-                for fare_data in out_fares:
-                    price_info, price_details = convert_prices(fare_data, passenger_counts, currency)
-                    fares_info = convert_fares_info(fare_data, segment_keys, legs, passenger_counts)
-                    baggages_info = convert_baggages_info(fare_data, segment_keys, legs, passenger_counts)
+                segment_keys = (
+                    [seg.segment_key for seg in out_route.segments] +
+                    [seg.segment_key for seg in ret_route.segments]
+                )
+                legs = (
+                    [seg.leg for seg in out_route.segments] +
+                    [seg.leg for seg in ret_route.segments]
+                )
 
+                # Цена из первого тарифа каждого направления
+                out_price_info, out_price_details = convert_prices(out_fares[0], passenger_counts, currency)
+                ret_price_info, ret_price_details = convert_prices(ret_fares[0], passenger_counts, currency)
 
-                    offer = Offer(
-                        offer_id=fare_data.get("FlightKey", str(uuid.uuid4())),
-                        price_info=price_info,
-                        reprice_available=True,
-                        upsell=has_upsell,
-                        booking=True,
-                        is_baggage_info_provided_by_pax=False,
-                        is_no_changing_airport=False,
-                        price_details=price_details,
-                        baggages_info=baggages_info,
-                        fares_info=fares_info,
-                        routes=routes,
-                        provider = Provider(
-                            provider_id="",
-                            name="Corendon Airlines",
-                            index=None,
-                            type="",
-                            is_charter=True,
-                            provider_index=None,
-                            supplier_id="",
-                            supplier_name="Corendon Airlines",
-                        ),
-                        supplier_provider = SupplierProvider(
-                            provider_name="Corendon Airlines",
-                            provider_office="",
-                        ),
+                price_info = PriceInfo(
+                    price=out_price_info.price + ret_price_info.price,
+                    currency=currency,
+                    fee_amount=0.0,
+                    base_amount=out_price_info.base_amount + ret_price_info.base_amount,
+                    commission_amount=0.0,
+                    from_commission_amount=0.0,
+                    to_commission_amount=0.0,
+                )
+
+                price_details = []
+                for i in range(len(out_price_details)):
+                    out_d = out_price_details[i]
+                    ret_d = ret_price_details[i] if i < len(ret_price_details) else ret_price_details[0]
+
+                    price_details.append(
+                        PriceDetail(
+                            passenger_type=out_d.passenger_type,
+                            currency=currency,
+                            quantity=out_d.quantity,
+                            single_base_amount=out_d.single_base_amount + ret_d.single_base_amount,
+                            single_tax_amount=out_d.single_tax_amount + ret_d.single_tax_amount,
+                            single_tax_details=0.0,
+                            fee_amount=0.0,
+                            to_commission_amount=0.0,
+                            commission_amount=out_d.commission_amount,
+                            single_total_amount=out_d.single_total_amount + ret_d.single_total_amount,
+                            base_total_amount=out_d.base_total_amount + ret_d.base_total_amount,
+                            tax_total_amount=out_d.tax_total_amount + ret_d.tax_total_amount,
+                            total_amount=out_d.total_amount + ret_d.total_amount,
+                            payable_amount=out_d.payable_amount + ret_d.payable_amount,
+                            single_fee_amount=0.0,
+                            single_service_fee_amount=out_d.single_service_fee_amount,
+                            single_commission_amount=out_d.single_commission_amount,
+                            single_from_commission_amount=0.0,
+                            single_to_commission_amount=0.0,
+                            single_payable_amount=out_d.single_payable_amount + ret_d.single_payable_amount,
+                            service_fee_amount=out_d.service_fee_amount,
+                            from_commission_amount=0.0,
+                            profit_commission_amount=0.0,
+                        ))
+
+                all_fares_info = convert_fares_info(out_fares[0], segment_keys, legs, passenger_counts)
+                all_baggages_info = convert_baggages_info(out_fares[0], segment_keys, legs, passenger_counts)
+
+                offer = Offer(
+                    offer_id=str(uuid.uuid4()),
+                    price_info=price_info,
+                    reprice_available=True,
+                    upsell=len(out_fares) > 1 or len(ret_fares) > 1,
+                    booking=True,
+                    is_baggage_info_provided_by_pax=False,
+                    is_no_changing_airport=check_is_no_changing_airport(routes),
+                    price_details=price_details,
+                    baggages_info=all_baggages_info,
+                    fares_info=all_fares_info,
+                    routes=routes,
+                    provider=_build_provider(),
+                    supplier_provider=_build_supplier_provider(),
+                    other=Other(
+                        FlightKey=(
+                            [f.get("FlightKey", "") for f in out_fares] +
+                            [f.get("FlightKey", "") for f in ret_fares]
+                        )
                     )
-                    offers.append(offer)
+                )
+                offers.append(offer.model_dump())
 
     return offers

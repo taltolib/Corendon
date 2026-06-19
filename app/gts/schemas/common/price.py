@@ -18,7 +18,7 @@ class PriceDetail(BaseModel) :
     quantity : int # 
     single_base_amount : float #BaseTotal
     single_tax_amount : float #TaxTotal
-    single_tax_details : float #`TaxDetails`
+    single_tax_details : list | float #`TaxDetails`
     fee_amount : float #
     to_commission_amount :float #
     commission_amount : float #

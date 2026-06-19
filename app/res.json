@@ -1,0 +1,129 @@
+[
+   {
+                "offer_id": "920d6e8b-c160-45ce-8769-04fa0c3b9d34",
+                "price_info": {
+                    "price": 145.95,
+                    "currency": "AZN",
+                    "fee_amount": 0.0,
+                    "base_amount": 126.91,
+                    "commission_amount": 0.0,
+                    "from_commission_amount": 0.0,
+                    "to_commission_amount": 0.0
+                },
+                "reprice_available": true,
+                "upsell": true,
+                "booking": true,
+
+                            "unit": "pc",
+                            "weight": 7,
+                            "size": {
+                                "height": null,
+                                "width": null,
+                                "length": null,
+                                "unit": ""
+                            }
+                        },
+                        "description": ""
+                    }
+                ],
+                "fares_info": [
+                    {
+                        "segment_keys": [
+                            "83d6cfa09df4714c81911b1ae70ebfeada156471eeccebcb83a17431452c87f4"
+                        ],
+                        "leg": [
+                            "TAS-VKO"
+                        ],
+                        "passenger_type": "ADT",
+                        "seats": 1,
+                        "upsell": {
+                            "name": "PUBLISHED",
+                            "services": []
+                        },
+                        "fare_code": "Y17RT",
+                        "service_class": "Economy",
+                        "service_class_code": "E",
+                        "booking_class": "Y",
+                        "description": ""
+                    }
+                ],
+                "routes": [
+                    {
+                        "route_index": 1,
+                        "direction": "TAS-VKO",
+                        "refundable": {
+                            "status": null,
+                            "type": null
+                        },
+                        "reissue": {
+                            "status": null,
+                            "type": null
+                        },
+                        "stops": 0,
+                        "trip_time_minutes": 630,
+                        "flight_time_minutes": 630,
+                        "segments": [
+                            {
+                                "segment_index": 1,
+                                "segment_key": "83d6cfa09df4714c81911b1ae70ebfeada156471eeccebcb83a17431452c87f4",
+                                "leg": "TAS-VKO",
+                                "flight_number": "219",
+                                "departure_country": "",
+                                "departure_country_code": "",
+                                "departure_city": "",
+                                "departure_city_code": "",
+                                "departure_airport": "",
+                                "departure_airport_code": "TAS",
+                                "departure_terminal": "",
+                                "departure_date": "2026-06-18",
+                                "departure_time": "19:00",
+                                "departure_timezone": "UTC+0",
+                                "arrival_country": "",
+                                "arrival_country_code": "",
+                                "arrival_city": "",
+                                "arrival_city_code": "",
+                                "arrival_airport": "",
+                                "arrival_airport_code": "VKO",
+                                "arrival_terminal": "",
+                                "arrival_date": "2026-06-19",
+                                "arrival_time": "05:30",
+                                "arrival_timezone": "UTC+0",
+                                "duration_minutes": 630,
+                                "stop_time_minutes": 0,
+                                "marketing_airline": "SU",
+                                "marketing_airline_code": "SU",
+                                "marketing_airline_logo": "https://api.test.globaltravel.space/media/airlines/SU.png",
+                                "operating_airline": "SU",
+                                "operating_airline_code": "SU",
+                                "operating_airline_logo": "https://api.test.globaltravel.space/media/airlines/SU.png",
+                                "seatmap_availability": false,
+                                "services_availability": false,
+                                "airplane_info": {
+                                    "airplane": "",
+                                    "airplane_code": "",
+                                    "seat_width": "",
+                                    "seat_angle": "",
+                                    "seat_scheme": "",
+                                    "seat_distance": "",
+                                    "has_wifi": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "provider": {
+                    "provider_id": "8c1e69925bdb43e6880a301a5e9d1970",
+                    "name": "gts_demo",
+                    "index": null,
+                    "type": "own",
+                    "is_charter": false,
+                    "provider_index": null,
+                    "supplier_id": "7c38335322d94aa6a77d03adffc09424",
+                    "supplier_name": "test_avia"
+                },
+                "supplier_provider": {
+                    "provider_name": "",
+                    "provider_office": ""
+                }
+            }
+]
